@@ -1,0 +1,34 @@
+{
+    "name": "Default Controls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "0be0d081-f392-41f5-8758-eab9fe666538",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Value",
+                    "id": "f4c578bc-c848-4059-89b3-56d33e973300",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6a1e20bf-dd24-4989-8dfa-d6fba53dece3",
+                    "path": "<Pointer>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
