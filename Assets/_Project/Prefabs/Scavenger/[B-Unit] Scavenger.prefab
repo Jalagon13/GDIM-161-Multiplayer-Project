@@ -19,9 +19,13 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7095149778857525148, guid: fd5f7bd1a14d5b847a8ebbe120f646c3, type: 3}
+      propertyPath: _path
+      value: 
+      objectReference: {fileID: 11400000, guid: 2c4e73cbd5d3e01418e71e7f0e9c2f74, type: 2}
     - target: {fileID: 7095149778857525216, guid: fd5f7bd1a14d5b847a8ebbe120f646c3, type: 3}
       propertyPath: m_Name
-      value: '[B-Unit] Scavenger Variant'
+      value: '[B-Unit] Scavenger'
       objectReference: {fileID: 0}
     - target: {fileID: 7095149778857525216, guid: fd5f7bd1a14d5b847a8ebbe120f646c3, type: 3}
       propertyPath: m_TagString

@@ -39,7 +39,7 @@ public class PlayerNetwork : NetworkBehaviour
     [ServerRpc]
     private void SpawnUnitServerRpc(ServerRpcParams serverRpcParams)
     {
-        Debug.Log($"SpawnUnitServerRpc Callback - SenderClientId: {serverRpcParams.Receive.SenderClientId}");
+        //Debug.Log($"SpawnUnitServerRpc Callback - SenderClientId: {serverRpcParams.Receive.SenderClientId}");
         Instantiate(serverRpcParams.Receive.SenderClientId == 0 ? _scavengerBlueUnit : _scavengerRedUnit).GetComponent<NetworkObject>().Spawn(true);
     }
 }
