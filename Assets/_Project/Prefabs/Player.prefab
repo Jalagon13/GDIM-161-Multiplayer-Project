@@ -92,4 +92,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 652b7fa712a04e545b97fabfcfc34155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scavengerUnit: {fileID: 7095149778857525216, guid: fd5f7bd1a14d5b847a8ebbe120f646c3, type: 3}
+  _scavengerBlueUnit: {fileID: 795351051862730394, guid: df4e0433f4f89514395c36d1d3a6feaa, type: 3}
+  _scavengerRedUnit: {fileID: 1417181979113900676, guid: 03891ace5e8fa2c47b8eefdfa4a02111, type: 3}

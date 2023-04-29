@@ -4,10 +4,10 @@ using UnityEngine.InputSystem;
 
 public class PlayerNetwork : NetworkBehaviour
 {
-    [SerializeField] private GameObject _scavengerUnit;
+    [SerializeField] private GameObject _scavengerBlueUnit;
+    [SerializeField] private GameObject _scavengerRedUnit;
 
     private DefaultControls _defaultControls;
-    private GameObject _unit;
 
     private void Awake()
     {
@@ -40,14 +40,6 @@ public class PlayerNetwork : NetworkBehaviour
     private void SpawnUnitServerRpc(ServerRpcParams serverRpcParams)
     {
         Debug.Log($"SpawnUnitServerRpc Callback - SenderClientId: {serverRpcParams.Receive.SenderClientId}");
-        _unit = Instantiate(_scavengerUnit);
-        _unit.GetComponent<NetworkObject>().Spawn(true);
-
-        if (serverRpcParams.Receive.SenderClientId == 0)
-            _unit.GetComponent<ScavengerUnit>().InitializeBlueUnit();
-        else
-            _unit.GetComponent<ScavengerUnit>().InitializeRedUnit();
-
-        
+        Instantiate(serverRpcParams.Receive.SenderClientId == 0 ? _scavengerBlueUnit : _scavengerRedUnit).GetComponent<NetworkObject>().Spawn(true);
     }
 }
