@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 44
+  controlID: 128
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 49
+  controlID: 105
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -196,8 +196,8 @@ MonoBehaviour:
     y: 448.8
     width: 723.2
     height: 274
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -229,7 +229,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 85
+  controlID: 129
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -301,8 +301,8 @@ MonoBehaviour:
     y: 0
     width: 336
     height: 722.8
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 24}
@@ -767,9 +767,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.117852405, y: 0.174352, z: -0.13663855}
+    m_Target: {x: 3.4625652, y: -0.37830642, z: -0.09694731}
     speed: 2
-    m_Value: {x: 0.117852405, y: 0.174352, z: -0.13663855}
+    m_Value: {x: 3.4625652, y: -0.37830642, z: -0.09694731}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -820,9 +820,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10.432145
+    m_Target: 8.290607
     speed: 2
-    m_Value: 10.432145
+    m_Value: 8.290607
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -946,7 +946,7 @@ MonoBehaviour:
   m_Zoom: 19.8675
   m_ScrollPosition: {x: 0, y: 0}
   m_SelectedObject: {fileID: 0}
-  m_SelectedSpriteRectGUID: 7dca7becf2118d04685c2c2091d45159
+  m_SelectedSpriteRectGUID: 00000000000000000000000000000000
   m_LastUsedModuleTypeName: 
 --- !u!114 &18
 MonoBehaviour:
@@ -1101,7 +1101,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: a24bffffdc4bffff184cffffa44cffffde4cffffb04effff2854ffff7054ffff4256ffffe258ffff1c59ffffee5affffb65cffffee5cffffc05effff3467ffff6e67ffff4069ffff986bffffd26bffffa46dffff886fffffc26ffffffe6fffffb670fffff070ffffc272fffff476ffff2e77ffff6a77ffff3c78ffff7678ffffb278ffff3a79ffff7479ffffb079ffff8c7affffc67affff987cffffaa7fffffe67fffff2280ffffe280ffff1c81ffffee82ffff2485ffff5e85ffff3087ffff4289ffff7a89ffff4c8bffffb48cffffec8cffffbe8effffba91fffff491ffffc693ffffd697ffff0e98ffffc499ffff449dffff7e9dffff349fffffd8a1ffff10a2ffffc6a3ffffeca6ffff24a7ffffdca8ffffd6abffff10acffffcaadffff02ceffff90d4ffffacf0ffff16f1ffff96f9fffff8fafffff4ffffff0a6700004cc30000
+      m_ExpandedIDs: 367dffff6e7dffff527fffff4a97ffff8497ffff6899ffff849dffffbe9dffffa29fffff96aeffffd0aeffffa4b0ffffdce5ffff16e6fffff0e7ffffd4f6ffff0cf7ffff48f7ffffd0f7ffff08f8ffffdaf9ffff1efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1167,7 +1167,7 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Project/Prefabs
+    - Assets/_Project/Prefabs/Scavenger
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 0
@@ -1181,7 +1181,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 22540000
     m_LastClickedID: 21538
-    m_ExpandedIDs: 000000005266000054660000
+    m_ExpandedIDs: 00000000706700000c6800000e68000010680000126800001468000016680000186800001a6800001c680000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1209,21 +1209,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000005266000054660000c0660000c2660000be690000066b00000c6b0000e06c0000ba88000016910000
+    m_ExpandedIDs: ffffffff00000000706700000c6800000e68000010680000126800001668000018680000dc8300000e8e0000168e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: '[Unit] Scavenger'
-      m_OriginalName: '[Unit] Scavenger'
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 36512
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 
