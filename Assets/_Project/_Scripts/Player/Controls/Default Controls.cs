@@ -35,6 +35,15 @@ public partial class @DefaultControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SpawnOpponentUnit"",
+                    ""type"": ""Button"",
+                    ""id"": ""15a9ef5d-f099-4fe4-b50c-873722ee1049"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -48,6 +57,17 @@ public partial class @DefaultControls: IInputActionCollection2, IDisposable
                     ""action"": ""SpawnUnit"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6d5e2e4f-f7f0-4f5c-baf1-b99bffadc8fd"",
+                    ""path"": ""<Keyboard>/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SpawnOpponentUnit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -57,6 +77,7 @@ public partial class @DefaultControls: IInputActionCollection2, IDisposable
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_SpawnUnit = m_Player.FindAction("SpawnUnit", throwIfNotFound: true);
+        m_Player_SpawnOpponentUnit = m_Player.FindAction("SpawnOpponentUnit", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -119,11 +140,13 @@ public partial class @DefaultControls: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Player;
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_SpawnUnit;
+    private readonly InputAction m_Player_SpawnOpponentUnit;
     public struct PlayerActions
     {
         private @DefaultControls m_Wrapper;
         public PlayerActions(@DefaultControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @SpawnUnit => m_Wrapper.m_Player_SpawnUnit;
+        public InputAction @SpawnOpponentUnit => m_Wrapper.m_Player_SpawnOpponentUnit;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -136,6 +159,9 @@ public partial class @DefaultControls: IInputActionCollection2, IDisposable
             @SpawnUnit.started += instance.OnSpawnUnit;
             @SpawnUnit.performed += instance.OnSpawnUnit;
             @SpawnUnit.canceled += instance.OnSpawnUnit;
+            @SpawnOpponentUnit.started += instance.OnSpawnOpponentUnit;
+            @SpawnOpponentUnit.performed += instance.OnSpawnOpponentUnit;
+            @SpawnOpponentUnit.canceled += instance.OnSpawnOpponentUnit;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -143,6 +169,9 @@ public partial class @DefaultControls: IInputActionCollection2, IDisposable
             @SpawnUnit.started -= instance.OnSpawnUnit;
             @SpawnUnit.performed -= instance.OnSpawnUnit;
             @SpawnUnit.canceled -= instance.OnSpawnUnit;
+            @SpawnOpponentUnit.started -= instance.OnSpawnOpponentUnit;
+            @SpawnOpponentUnit.performed -= instance.OnSpawnOpponentUnit;
+            @SpawnOpponentUnit.canceled -= instance.OnSpawnOpponentUnit;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -163,5 +192,6 @@ public partial class @DefaultControls: IInputActionCollection2, IDisposable
     public interface IPlayerActions
     {
         void OnSpawnUnit(InputAction.CallbackContext context);
+        void OnSpawnOpponentUnit(InputAction.CallbackContext context);
     }
 }
