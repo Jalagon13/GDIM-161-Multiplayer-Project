@@ -324,3 +324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _path: {fileID: 0}
   _speed: 3
+  _atkSpeed: 3
+  _cost: 25
+  _maxHP: 100
+  _atk: 25

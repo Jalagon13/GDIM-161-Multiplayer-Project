@@ -5,6 +5,7 @@ public abstract class Unit : NetworkBehaviour
 {
     [SerializeField] private protected PathObject _path;
     [SerializeField] private protected float _speed;
+    [SerializeField] private protected float _atkSpeed; // time it takes to perform an attack
     [SerializeField] private protected int _cost;
     [SerializeField] private protected int _maxHP;
     [SerializeField] private protected int _atk;
@@ -19,6 +20,7 @@ public abstract class Unit : NetworkBehaviour
     private protected Vector2 _moveDirection;
     private protected Vector2 _offSet;
     private protected Unit _enemy; // unit being attacked
+    private protected float _timeAttacked; // time since last attack
 
     public bool IsAttacking { get { return _isAttacking; } set { _isAttacking = value; } }
     public float Speed { get { return _speed; } set { _speed = value; } }
@@ -43,7 +45,15 @@ public abstract class Unit : NetworkBehaviour
 
     private void FixedUpdate()
     {
-        _rb.MovePosition(_rb.position + _moveDirection * _speed * Time.deltaTime);
+        if (!_isAttacking) // Keep moving if not attacking
+            _rb.MovePosition(_rb.position + _moveDirection * _speed * Time.deltaTime);
+        else if (_atkSpeed <= _timeAttacked) // Attack once "recharged"
+        {
+            Attack();
+            _timeAttacked = 0; // reset time since last attack
+        }
+        else
+            _timeAttacked += Time.deltaTime;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -51,18 +61,42 @@ public abstract class Unit : NetworkBehaviour
         if (IsAttacking || !collision.CompareTag(_tagToAttack)) return; // ignore if already attacking or is supposed to be ignored
         if (collision.TryGetComponent(out Unit unit))
         {
-            collision.enabled = false;
-            unit.IsAttacking = true;
-            unit.Speed = 0f;
-
-            _collider.enabled = false;
+            _enemy = unit;
+            //_collider.enabled = false;
             _isAttacking = true;
-            _speed = 0f;
+            _timeAttacked = _atkSpeed;
         }
     }
 
     private void CalcMoveDirection()
     {
-        _moveDirection = ((_path.EndPosition + _offSet) - (Vector2)transform.position).normalized;
+        _moveDirection = (_path.EndPosition + _offSet - (Vector2)transform.position).normalized;
+    }
+
+    private void ContinueMoving()
+    {
+        _enemy = null;
+        _isAttacking = false;
+        _collider.enabled = true; // disable if we want units to gang up on others instead of 1v1 combat
+        _timeAttacked = 0;
+    }
+
+    private void Attack()
+    {
+        if(_enemy == null) // Move on if there isn't an enemy
+        {
+            ContinueMoving();
+            return;
+        }
+        //Debug.Log((gameObject.CompareTag(BLUE_TEAM) ? BLUE_TEAM : RED_TEAM) + " attacking " + _tagToAttack);
+        _enemy._currentHP -= _atk;
+        //Debug.Log((gameObject.CompareTag(BLUE_TEAM) ? BLUE_TEAM : RED_TEAM) + " HP:" + _currentHP);
+
+        if (_enemy._currentHP <= 0)
+        {
+            // kill unit and let enemy keep moving
+            Destroy(_enemy.gameObject);
+            ContinueMoving();
+        }
     }
 }
