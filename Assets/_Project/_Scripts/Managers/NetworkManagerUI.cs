@@ -13,16 +13,19 @@ public class NetworkManagerUI : MonoBehaviour
         _serverButton.onClick.AddListener(() =>
         {
             NetworkManager.Singleton.StartServer();
+            gameObject.SetActive(false);
         });
 
         _hostButton.onClick.AddListener(() =>
         {
             NetworkManager.Singleton.StartHost();
+            gameObject.SetActive(false);
         });
 
         _clientButton.onClick.AddListener(() =>
         {
             NetworkManager.Singleton.StartClient();
+            gameObject.SetActive(false);
         });
     }
 }

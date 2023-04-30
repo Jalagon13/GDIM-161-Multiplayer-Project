@@ -47,6 +47,8 @@ public abstract class Unit : NetworkBehaviour
     {
         if (!_isAttacking) // Keep moving if not attacking
             _rb.MovePosition(_rb.position + _moveDirection * _speed * Time.deltaTime);
+        else if (_enemy == null) // Move on if there isn't an enemy
+            ContinueMoving();
         else if (_atkSpeed <= _timeAttacked) // Attack once "recharged"
         {
             Attack();
