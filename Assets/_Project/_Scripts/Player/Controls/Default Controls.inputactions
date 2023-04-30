@@ -6,24 +6,24 @@
             "id": "0be0d081-f392-41f5-8758-eab9fe666538",
             "actions": [
                 {
-                    "name": "Click",
-                    "type": "Value",
-                    "id": "f4c578bc-c848-4059-89b3-56d33e973300",
-                    "expectedControlType": "Vector2",
+                    "name": "SpawnUnit",
+                    "type": "Button",
+                    "id": "f484fab0-4772-4786-991f-e0fd463e8dbb",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
                     "name": "",
-                    "id": "6a1e20bf-dd24-4989-8dfa-d6fba53dece3",
-                    "path": "<Pointer>/position",
+                    "id": "dbd4a27f-c694-40fa-9f2b-cbc207992c7f",
+                    "path": "<Keyboard>/t",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Click",
+                    "action": "SpawnUnit",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
