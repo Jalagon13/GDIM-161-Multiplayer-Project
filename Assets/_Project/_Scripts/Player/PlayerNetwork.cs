@@ -6,11 +6,16 @@ public class PlayerNetwork : NetworkBehaviour
 {
     [SerializeField] private GameObject _scavengerBlueUnit;
     [SerializeField] private GameObject _scavengerRedUnit;
+    [SerializeField] private GameObject _blueTower;
+    [SerializeField] private GameObject _redTower;
+    [SerializeField] private LayerMask _towerNodeLayer;
 
     private DefaultControls _defaultControls;
 
     private void Awake()
     {
+        // If (!isOwner) Destroy(this);
+
         _defaultControls = new DefaultControls();
     }
 
@@ -26,8 +31,10 @@ public class PlayerNetwork : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
-        _defaultControls.Player.SpawnUnit.started += SpawnUnit;
-        _defaultControls.Player.SpawnOpponentUnit.started += SpawnOpponentUnit;
+        _defaultControls.Debug.SpawnUnit.started += SpawnUnit;
+        _defaultControls.Debug.SpawnOpponentUnit.started += SpawnOpponentUnit;
+
+        _defaultControls.Player.Click.started += OnClick;
     }
 
     private void SpawnUnit(InputAction.CallbackContext context)
@@ -58,5 +65,26 @@ public class PlayerNetwork : NetworkBehaviour
         // temp method for spawning opponent without another game instance, for testing only
         //Debug.Log($"SpawnUnitServerRpc Callback - SenderClientId: {serverRpcParams.Receive.SenderClientId}");
         Instantiate(serverRpcParams.Receive.SenderClientId == 1 ? _scavengerBlueUnit : _scavengerRedUnit).GetComponent<NetworkObject>().Spawn(true);
+    }
+
+    // Possibly do this by making the tower nodes buttons instead and having them fire an event in some tower node manager to all players
+    private void OnClick(InputAction.CallbackContext context)
+    {
+        if (!IsOwner) return;
+
+        Vector2 position = context.ReadValue<Vector2>();
+        Ray rayToPoint = Camera.main.ScreenPointToRay(position);
+
+        // Needs a way to check if the node is already taken, probably through a tower node interface
+        if (Physics.Raycast(rayToPoint, Mathf.Infinity, _towerNodeLayer))
+        {
+            SpawnTowerServerRpc(new ServerRpcParams { Receive = new ServerRpcReceiveParams { SenderClientId = OwnerClientId } });
+        }
+    }
+
+    [ServerRpc]
+    private void SpawnTowerServerRpc(ServerRpcParams serverRpcParams)
+    {
+        Instantiate(serverRpcParams.Receive.SenderClientId == 0 ? _blueTower : _redTower).GetComponent<NetworkObject>().Spawn(true);
     }
 }

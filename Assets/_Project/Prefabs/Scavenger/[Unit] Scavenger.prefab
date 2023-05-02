@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1991306026567899392}
   - component: {fileID: 5417570760727679653}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7095149777837683668}
   - component: {fileID: 7095149777837683669}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 7095149778857525218}
   - component: {fileID: 7095149778857525219}
   - component: {fileID: 7095149778857525148}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: '[Unit] Scavenger'
   m_TagString: Untagged
   m_Icon: {fileID: 0}

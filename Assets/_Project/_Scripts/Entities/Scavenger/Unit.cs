@@ -101,4 +101,14 @@ public abstract class Unit : NetworkBehaviour
             ContinueMoving();
         }
     }
+
+    public void DealDamage(int damage)
+    {
+        _currentHP -= damage;
+
+        if (_currentHP <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 }

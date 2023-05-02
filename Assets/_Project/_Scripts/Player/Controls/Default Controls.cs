@@ -28,9 +28,37 @@ public partial class @DefaultControls: IInputActionCollection2, IDisposable
             ""id"": ""0be0d081-f392-41f5-8758-eab9fe666538"",
             ""actions"": [
                 {
+                    ""name"": ""Click"",
+                    ""type"": ""Value"",
+                    ""id"": ""235d1b62-24fc-43c5-8ca0-59c6e82f9893"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""a61d6a41-0d48-4ad4-a712-318cb25ee6a4"",
+                    ""path"": ""<Pointer>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Click"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Debug"",
+            ""id"": ""b952ae2a-4312-4855-9a12-321245cbf2b1"",
+            ""actions"": [
+                {
                     ""name"": ""SpawnUnit"",
                     ""type"": ""Button"",
-                    ""id"": ""f484fab0-4772-4786-991f-e0fd463e8dbb"",
+                    ""id"": ""52f86994-f70a-4fd6-898a-73792d19b007"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -39,7 +67,7 @@ public partial class @DefaultControls: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""SpawnOpponentUnit"",
                     ""type"": ""Button"",
-                    ""id"": ""15a9ef5d-f099-4fe4-b50c-873722ee1049"",
+                    ""id"": ""2052ee4c-75b7-4f0e-807d-5df01cb18d6a"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -49,7 +77,7 @@ public partial class @DefaultControls: IInputActionCollection2, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""dbd4a27f-c694-40fa-9f2b-cbc207992c7f"",
+                    ""id"": ""88738725-4061-426a-b479-af0f52600a4a"",
                     ""path"": ""<Keyboard>/t"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -60,7 +88,7 @@ public partial class @DefaultControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""6d5e2e4f-f7f0-4f5c-baf1-b99bffadc8fd"",
+                    ""id"": ""3a2d0cfe-cc68-4793-8b70-c3f07947c62e"",
                     ""path"": ""<Keyboard>/y"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -76,8 +104,11 @@ public partial class @DefaultControls: IInputActionCollection2, IDisposable
 }");
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
-        m_Player_SpawnUnit = m_Player.FindAction("SpawnUnit", throwIfNotFound: true);
-        m_Player_SpawnOpponentUnit = m_Player.FindAction("SpawnOpponentUnit", throwIfNotFound: true);
+        m_Player_Click = m_Player.FindAction("Click", throwIfNotFound: true);
+        // Debug
+        m_Debug = asset.FindActionMap("Debug", throwIfNotFound: true);
+        m_Debug_SpawnUnit = m_Debug.FindAction("SpawnUnit", throwIfNotFound: true);
+        m_Debug_SpawnOpponentUnit = m_Debug.FindAction("SpawnOpponentUnit", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -139,14 +170,12 @@ public partial class @DefaultControls: IInputActionCollection2, IDisposable
     // Player
     private readonly InputActionMap m_Player;
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
-    private readonly InputAction m_Player_SpawnUnit;
-    private readonly InputAction m_Player_SpawnOpponentUnit;
+    private readonly InputAction m_Player_Click;
     public struct PlayerActions
     {
         private @DefaultControls m_Wrapper;
         public PlayerActions(@DefaultControls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @SpawnUnit => m_Wrapper.m_Player_SpawnUnit;
-        public InputAction @SpawnOpponentUnit => m_Wrapper.m_Player_SpawnOpponentUnit;
+        public InputAction @Click => m_Wrapper.m_Player_Click;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -156,22 +185,16 @@ public partial class @DefaultControls: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_PlayerActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_PlayerActionsCallbackInterfaces.Add(instance);
-            @SpawnUnit.started += instance.OnSpawnUnit;
-            @SpawnUnit.performed += instance.OnSpawnUnit;
-            @SpawnUnit.canceled += instance.OnSpawnUnit;
-            @SpawnOpponentUnit.started += instance.OnSpawnOpponentUnit;
-            @SpawnOpponentUnit.performed += instance.OnSpawnOpponentUnit;
-            @SpawnOpponentUnit.canceled += instance.OnSpawnOpponentUnit;
+            @Click.started += instance.OnClick;
+            @Click.performed += instance.OnClick;
+            @Click.canceled += instance.OnClick;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
         {
-            @SpawnUnit.started -= instance.OnSpawnUnit;
-            @SpawnUnit.performed -= instance.OnSpawnUnit;
-            @SpawnUnit.canceled -= instance.OnSpawnUnit;
-            @SpawnOpponentUnit.started -= instance.OnSpawnOpponentUnit;
-            @SpawnOpponentUnit.performed -= instance.OnSpawnOpponentUnit;
-            @SpawnOpponentUnit.canceled -= instance.OnSpawnOpponentUnit;
+            @Click.started -= instance.OnClick;
+            @Click.performed -= instance.OnClick;
+            @Click.canceled -= instance.OnClick;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -189,7 +212,65 @@ public partial class @DefaultControls: IInputActionCollection2, IDisposable
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
+
+    // Debug
+    private readonly InputActionMap m_Debug;
+    private List<IDebugActions> m_DebugActionsCallbackInterfaces = new List<IDebugActions>();
+    private readonly InputAction m_Debug_SpawnUnit;
+    private readonly InputAction m_Debug_SpawnOpponentUnit;
+    public struct DebugActions
+    {
+        private @DefaultControls m_Wrapper;
+        public DebugActions(@DefaultControls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @SpawnUnit => m_Wrapper.m_Debug_SpawnUnit;
+        public InputAction @SpawnOpponentUnit => m_Wrapper.m_Debug_SpawnOpponentUnit;
+        public InputActionMap Get() { return m_Wrapper.m_Debug; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(DebugActions set) { return set.Get(); }
+        public void AddCallbacks(IDebugActions instance)
+        {
+            if (instance == null || m_Wrapper.m_DebugActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_DebugActionsCallbackInterfaces.Add(instance);
+            @SpawnUnit.started += instance.OnSpawnUnit;
+            @SpawnUnit.performed += instance.OnSpawnUnit;
+            @SpawnUnit.canceled += instance.OnSpawnUnit;
+            @SpawnOpponentUnit.started += instance.OnSpawnOpponentUnit;
+            @SpawnOpponentUnit.performed += instance.OnSpawnOpponentUnit;
+            @SpawnOpponentUnit.canceled += instance.OnSpawnOpponentUnit;
+        }
+
+        private void UnregisterCallbacks(IDebugActions instance)
+        {
+            @SpawnUnit.started -= instance.OnSpawnUnit;
+            @SpawnUnit.performed -= instance.OnSpawnUnit;
+            @SpawnUnit.canceled -= instance.OnSpawnUnit;
+            @SpawnOpponentUnit.started -= instance.OnSpawnOpponentUnit;
+            @SpawnOpponentUnit.performed -= instance.OnSpawnOpponentUnit;
+            @SpawnOpponentUnit.canceled -= instance.OnSpawnOpponentUnit;
+        }
+
+        public void RemoveCallbacks(IDebugActions instance)
+        {
+            if (m_Wrapper.m_DebugActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IDebugActions instance)
+        {
+            foreach (var item in m_Wrapper.m_DebugActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_DebugActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public DebugActions @Debug => new DebugActions(this);
     public interface IPlayerActions
+    {
+        void OnClick(InputAction.CallbackContext context);
+    }
+    public interface IDebugActions
     {
         void OnSpawnUnit(InputAction.CallbackContext context);
         void OnSpawnOpponentUnit(InputAction.CallbackContext context);

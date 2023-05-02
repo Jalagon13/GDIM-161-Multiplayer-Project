@@ -6,9 +6,37 @@
             "id": "0be0d081-f392-41f5-8758-eab9fe666538",
             "actions": [
                 {
+                    "name": "Click",
+                    "type": "Value",
+                    "id": "235d1b62-24fc-43c5-8ca0-59c6e82f9893",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a61d6a41-0d48-4ad4-a712-318cb25ee6a4",
+                    "path": "<Pointer>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Debug",
+            "id": "b952ae2a-4312-4855-9a12-321245cbf2b1",
+            "actions": [
+                {
                     "name": "SpawnUnit",
                     "type": "Button",
-                    "id": "f484fab0-4772-4786-991f-e0fd463e8dbb",
+                    "id": "52f86994-f70a-4fd6-898a-73792d19b007",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -17,7 +45,7 @@
                 {
                     "name": "SpawnOpponentUnit",
                     "type": "Button",
-                    "id": "15a9ef5d-f099-4fe4-b50c-873722ee1049",
+                    "id": "2052ee4c-75b7-4f0e-807d-5df01cb18d6a",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -27,7 +55,7 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "dbd4a27f-c694-40fa-9f2b-cbc207992c7f",
+                    "id": "88738725-4061-426a-b479-af0f52600a4a",
                     "path": "<Keyboard>/t",
                     "interactions": "",
                     "processors": "",
@@ -38,7 +66,7 @@
                 },
                 {
                     "name": "",
-                    "id": "6d5e2e4f-f7f0-4f5c-baf1-b99bffadc8fd",
+                    "id": "3a2d0cfe-cc68-4793-8b70-c3f07947c62e",
                     "path": "<Keyboard>/y",
                     "interactions": "",
                     "processors": "",
