@@ -1,5 +1,3 @@
-using System.Collections;
-using Unity.Netcode;
 using UnityEngine;
 
 [RequireComponent(typeof(IAttackMethod))]
@@ -51,7 +49,9 @@ public class Scavenger : Unit
         {
             if(collider.TryGetComponent(out Unit unit))
             {
-                if (unit.CompareTag(_tagToAttack) && Vector3.Distance(transform.position , unit.transform.position) < _agroRange)
+                float distanceBtwn = Vector3.Distance(transform.position, unit.transform.position);
+
+                if (unit.CompareTag(_tagToAttack) && distanceBtwn < _agroRange)
                 {
                     _attackMethod.ExecuteAttack(unit);
                     return;
