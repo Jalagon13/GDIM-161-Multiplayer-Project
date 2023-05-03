@@ -39,6 +39,12 @@ public class Scavenger : Unit
         }
     }
 
+    private void FixedUpdate()
+    {
+        if (!_isAttacking)
+            _rb.MovePosition(_rb.position + _moveDirection * _speed * Time.deltaTime);
+    }
+
     private void FindTarget()
     {
         var colliders = Physics2D.OverlapCircleAll(transform.position, _agroRange);
@@ -75,12 +81,6 @@ public class Scavenger : Unit
             _unitBeingAttacked.GetComponent<NetworkObject>().Despawn(true);
             yield break;
         }
-    }
-
-    private void FixedUpdate()
-    {
-        if (!_isAttacking)
-            _rb.MovePosition(_rb.position + _moveDirection * _speed * Time.deltaTime);
     }
 
     private void CalcMoveDirection()
