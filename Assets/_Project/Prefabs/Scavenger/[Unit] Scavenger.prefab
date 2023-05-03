@@ -928,7 +928,7 @@ MonoBehaviour:
   _healthBar: {fileID: 8731873593901254595}
   _maxHP: 100
   _atkDamage: 25
-  _atkSpeed: 1
+  _atkSpeed: 3
   _agroRange: 1.5
   _cost: 25
   _path: {fileID: 0}

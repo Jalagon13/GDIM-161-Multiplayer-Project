@@ -182,6 +182,10 @@ PrefabInstance:
       propertyPath: GlobalObjectIdHash
       value: 3896784467
       objectReference: {fileID: 0}
+    - target: {fileID: 926068219578058667, guid: e0f300e70f7577049a98699a0f36ccf7, type: 3}
+      propertyPath: _agroRange
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0f300e70f7577049a98699a0f36ccf7, type: 3}
 --- !u!1 &53186970

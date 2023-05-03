@@ -271,8 +271,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2851793480743062807}
   - component: {fileID: 2201121482002359399}
-  - component: {fileID: 2851793480743062804}
   - component: {fileID: 2851793480743062805}
+  - component: {fileID: 2851793480743062804}
+  - component: {fileID: -3804089585311764757}
   m_Layer: 0
   m_Name: '[Tower] Tower'
   m_TagString: Untagged
@@ -324,24 +325,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 4}
   m_EdgeRadius: 0
---- !u!114 &2851793480743062804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2851793480743062826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa2ee733debc3584f9fd011fc215a904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _healthBar: {fileID: 1735985895499367812}
-  _maxHP: 300
-  _atkDamage: 50
-  _atkSpeed: 5
-  _agroRange: 1
-  _cost: 250
 --- !u!114 &2851793480743062805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,6 +341,36 @@ MonoBehaviour:
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &2851793480743062804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2851793480743062826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2ee733debc3584f9fd011fc215a904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _healthBar: {fileID: 1735985895499367812}
+  _maxHP: 300
+  _atkDamage: 50
+  _atkSpeed: 5
+  _agroRange: 3
+  _cost: 250
+--- !u!114 &-3804089585311764757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2851793480743062826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce90c731529153145ac4462e160f27c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4379099737099130819
 GameObject:
   m_ObjectHideFlags: 0
