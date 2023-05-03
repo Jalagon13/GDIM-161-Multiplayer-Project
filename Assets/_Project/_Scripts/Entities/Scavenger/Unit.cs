@@ -8,6 +8,7 @@ public abstract class Unit : NetworkBehaviour
     [SerializeField] protected float _atkSpeed; // time it takes to perform an attack
     [SerializeField] protected float _agroRange;
     [SerializeField] protected int _cost;
+    [SerializeField] private HealthBar _healthBar;
 
     protected static string RED_TEAM = "Red";
     protected static string BLUE_TEAM = "Blue";
@@ -22,14 +23,24 @@ public abstract class Unit : NetworkBehaviour
 
     protected virtual void Awake()
     {
-        _unitLayer.value = 6; // 6 == Unit Layer
+        _unitLayer.value = 6; // six is the "Unit" Layer
         _unitFilter.SetLayerMask(_unitLayer);
         _tagToAttack = gameObject.CompareTag(BLUE_TEAM) ? RED_TEAM : BLUE_TEAM;
         _currentHP = _maxHP;
+
+        UpdateHP();
     }
 
     public void DealDamage(int damage)
     {
         _currentHP -= damage;
+
+        UpdateHP();
+    }
+
+    private void UpdateHP()
+    {
+        if (_healthBar != null)
+            _healthBar.UpdateFill(_currentHP, _maxHP);
     }
 }
