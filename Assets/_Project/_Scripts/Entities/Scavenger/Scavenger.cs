@@ -2,22 +2,26 @@ using System.Collections;
 using Unity.Netcode;
 using UnityEngine;
 
+[RequireComponent(typeof(IAttackMethod))]
 public class Scavenger : Unit
 {
+    [Header("Ground Unit Stuff")]
     [SerializeField] private PathObject _path;
-    [SerializeField] private float _speed;
+    [SerializeField] private float _moveSpeed;
+    [SerializeField] private float _spawnOffset; // how far from the center of the spawn point the unit spawns
 
-    private Unit _unitBeingAttacked;
     private Rigidbody2D _rb;
     private Vector2 _moveDirection;
     private Vector2 _offSet;
+    private IAttackMethod _attackMethod;
 
     protected override void Awake()
     {
         base.Awake();
 
-        _offSet = Random.insideUnitCircle * 0.75f;
+        _offSet = Random.insideUnitCircle * _spawnOffset;
         transform.position = _path.StartPosition + _offSet;
+        _attackMethod = GetComponent<IAttackMethod>();
     }
 
     public override void OnNetworkSpawn()
@@ -31,18 +35,12 @@ public class Scavenger : Unit
     {
         if (!_isAttacking)
             FindTarget();
-
-        if (_unitBeingAttacked == null)
-        {
-            _isAttacking = false;
-            StopAllCoroutines();
-        }
     }
 
     private void FixedUpdate()
     {
         if (!_isAttacking)
-            _rb.MovePosition(_rb.position + _moveDirection * _speed * Time.deltaTime);
+            _rb.MovePosition(_rb.position + _moveDirection * _moveSpeed * Time.deltaTime);
     }
 
     private void FindTarget()
@@ -55,31 +53,10 @@ public class Scavenger : Unit
             {
                 if (unit.CompareTag(_tagToAttack) && Vector3.Distance(transform.position , unit.transform.position) < _agroRange)
                 {
-                    StartCoroutine(AttackTarget(unit));
+                    _attackMethod.ExecuteAttack(unit);
                     return;
                 }
             }
-        }
-    }
-
-    private IEnumerator AttackTarget(Unit enemyUnit)
-    {
-        _unitBeingAttacked = enemyUnit;
-        _isAttacking = true;
-
-        yield return new WaitForSeconds(_atkSpeed);
-
-        _unitBeingAttacked.DealDamage(_atkDamage);
-
-        if (_unitBeingAttacked.CurrentHP > 0)
-        {
-            StartCoroutine(AttackTarget(_unitBeingAttacked));
-        }
-        else
-        {
-            _isAttacking = false;
-            _unitBeingAttacked.GetComponent<NetworkObject>().Despawn(true);
-            yield break;
         }
     }
 

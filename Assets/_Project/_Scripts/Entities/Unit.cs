@@ -3,12 +3,13 @@ using UnityEngine;
 
 public abstract class Unit : NetworkBehaviour
 {
+    [Header("Unit base parameters")]
+    [SerializeField] private HealthBar _healthBar;
     [SerializeField] protected int _maxHP;
     [SerializeField] protected int _atkDamage;
     [SerializeField] protected float _atkSpeed; // time it takes to perform an attack
     [SerializeField] protected float _agroRange;
     [SerializeField] protected int _cost;
-    [SerializeField] private HealthBar _healthBar;
 
     protected static string RED_TEAM = "Red";
     protected static string BLUE_TEAM = "Blue";
@@ -17,7 +18,11 @@ public abstract class Unit : NetworkBehaviour
     protected string _tagToAttack;
     protected bool _isAttacking;
     protected int _currentHP;
+    protected Unit _unitBeingAttacked;
 
+    public Unit UnitBeingAttacked { get { return _unitBeingAttacked; } set { _unitBeingAttacked = value; } }
+    public float AttackSpeed { get { return _atkSpeed; } }
+    public int AttackDamage { get { return _atkDamage; } }
     public bool IsAttacking { get { return _isAttacking; } set { _isAttacking = value; } }
     public int CurrentHP { get { return _currentHP; } }
 

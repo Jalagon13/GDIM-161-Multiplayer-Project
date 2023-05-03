@@ -784,6 +784,7 @@ GameObject:
   - component: {fileID: 7095149778857525218}
   - component: {fileID: 7095149778857525219}
   - component: {fileID: 7095149778857525148}
+  - component: {fileID: 8148020763226076782}
   m_Layer: 6
   m_Name: '[Unit] Scavenger'
   m_TagString: Untagged
@@ -924,14 +925,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c338c7af65abcb429ea760634606d17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _healthBar: {fileID: 8731873593901254595}
   _maxHP: 100
   _atkDamage: 25
   _atkSpeed: 1
-  _agroRange: 1
+  _agroRange: 1.25
   _cost: 25
-  _healthBar: {fileID: 8731873593901254595}
   _path: {fileID: 0}
-  _speed: 3
+  _moveSpeed: 3
+  _spawnOffset: 0.75
+--- !u!114 &8148020763226076782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7095149778857525216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f4aef25ea44b0458b9ce28566fe546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9103166735323393952
 GameObject:
   m_ObjectHideFlags: 0

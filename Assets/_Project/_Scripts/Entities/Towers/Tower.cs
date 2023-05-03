@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class Tower : Unit
 {
-    private Unit _target = null;
-
     private void CheckForResourceNode()
     {
         
@@ -34,9 +32,9 @@ public class Tower : Unit
 
             Transform target = unitsFound[closestEnemy].transform;
 
-            if (!Vector3.Equals(_target.transform.position, target.position))
+            if (!Vector3.Equals(_unitBeingAttacked.transform.position, target.position))
             {
-                _target = target.gameObject.GetComponent<Unit>();
+                _unitBeingAttacked = target.gameObject.GetComponent<Unit>();
             }
 
             //_target.DealDamage(_atkDamage);
