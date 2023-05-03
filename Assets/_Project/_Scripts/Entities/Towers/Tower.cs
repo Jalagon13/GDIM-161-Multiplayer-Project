@@ -1,14 +1,7 @@
 using UnityEngine;
-using Unity.Netcode;
 
-public class Tower : NetworkBehaviour
+public class Tower : Unit
 {
-    [SerializeField] private int _damage;
-    [SerializeField] private float _range;
-    [SerializeField] private LayerMask _unitLayer;
-
-    private ContactFilter2D _unitFilter = new ContactFilter2D();
-    private string _tagToAttack;
     private Unit _target = null;
 
     private void CheckForResourceNode()
@@ -16,20 +9,10 @@ public class Tower : NetworkBehaviour
         
     }
 
-    private void Awake()
-    {
-        _unitFilter.SetLayerMask(_unitLayer);
-
-        // Might want to include this as a function in an interface IAttacker
-        string RED_TEAM = "Red";
-        string BLUE_TEAM = "Blue";
-        _tagToAttack = gameObject.CompareTag(BLUE_TEAM) ? RED_TEAM : BLUE_TEAM;
-    }
-
     private void FindTarget()
     {
         RaycastHit2D[] unitsFound = new RaycastHit2D[8];
-        int amount = Physics2D.CircleCast(transform.position, _range, Vector2.right, _unitFilter, unitsFound, Mathf.Epsilon);
+        int amount = Physics2D.CircleCast(transform.position, _agroRange, Vector2.right, _unitFilter, unitsFound, Mathf.Epsilon);
 
         // If any units are found, see which enemy is the closest;
         // if this is the same target as last time, don't bother getting the Unit component
@@ -56,7 +39,7 @@ public class Tower : NetworkBehaviour
                 _target = target.gameObject.GetComponent<Unit>();
             }
 
-            _target.DealDamage(_damage);
+            //_target.DealDamage(_atkDamage);
         }
     }
 
@@ -68,6 +51,6 @@ public class Tower : NetworkBehaviour
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawSphere(transform.position, _range);
+        Gizmos.DrawSphere(transform.position, _agroRange);
     }
 }

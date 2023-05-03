@@ -46,11 +46,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2ee733debc3584f9fd011fc215a904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 1
-  _range: 5
-  _unitLayer:
-    serializedVersion: 2
-    m_Bits: 64
+  _atkDamage: 50
+  _atkSpeed: 5
+  _maxHP: 300
+  _cost: 250
+  _agroRange: 1
 --- !u!114 &2851793480743062805
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -244,7 +244,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 0.5
 --- !u!210 &8686525846642501818
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -322,9 +322,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c338c7af65abcb429ea760634606d17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _maxHP: 100
+  _atkDamage: 25
+  _atkSpeed: 1
+  _agroRange: 1
+  _cost: 25
   _path: {fileID: 0}
   _speed: 3
-  _atkSpeed: 3
-  _cost: 25
-  _maxHP: 100
-  _atk: 25
