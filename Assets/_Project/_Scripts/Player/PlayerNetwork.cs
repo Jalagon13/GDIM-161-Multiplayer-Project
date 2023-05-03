@@ -33,8 +33,22 @@ public class PlayerNetwork : NetworkBehaviour
     {
         _defaultControls.Debug.SpawnUnit.started += SpawnUnit;
         _defaultControls.Debug.SpawnOpponentUnit.started += SpawnOpponentUnit;
-
         _defaultControls.Player.Click.started += OnClick;
+
+        if (OwnerClientId == 0)
+            InitializeAsBlueTeam();
+        else
+            InitializeAsRedTeam();
+    }
+
+    private void InitializeAsBlueTeam()
+    {
+        Debug.Log("InitializeAsBlueTeam Callback");
+    }
+
+    private void InitializeAsRedTeam()
+    {
+        Debug.Log("InitializeAsRedTeam Callback");
     }
 
     private void SpawnUnit(InputAction.CallbackContext context)

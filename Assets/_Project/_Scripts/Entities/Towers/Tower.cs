@@ -20,7 +20,7 @@ public class Tower : Unit
     private void FindTarget()
     {
         float distanceCounter = 100f;
-        Unit closetUnit = default;
+        Unit closestUnit = default;
         var colliders = Physics2D.OverlapCircleAll(transform.position, _agroRange);
 
         // loop through all Units in colliders to find the closetUnit
@@ -35,15 +35,15 @@ public class Tower : Unit
                     if (distanceBtwn < distanceCounter)
                     {
                         distanceCounter = distanceBtwn;
-                        closetUnit = unit;
+                        closestUnit = unit;
                     }
                 }
             }
         }
 
-        if(closetUnit != default)
+        if(closestUnit != default)
         {
-            _attackMethod.ExecuteAttack(closetUnit);
+            _attackMethod.ExecuteAttack(closestUnit);
         }
     }
     private void CheckForResourceNode()
