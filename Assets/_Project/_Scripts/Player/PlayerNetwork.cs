@@ -14,7 +14,7 @@ public class PlayerNetwork : NetworkBehaviour
 
     private void Awake()
     {
-        // If (!isOwner) Destroy(this);
+        // if (!isOwner) Destroy(this);
 
         _defaultControls = new DefaultControls();
     }
@@ -83,8 +83,10 @@ public class PlayerNetwork : NetworkBehaviour
     }
 
     [ServerRpc]
-    private void SpawnTowerServerRpc(ServerRpcParams serverRpcParams)
+    private void SpawnTowerServerRpc(ServerRpcParams serverRpcParams)//, TowerNode node)
     {
-        Instantiate(serverRpcParams.Receive.SenderClientId == 0 ? _blueTower : _redTower).GetComponent<NetworkObject>().Spawn(true);
+        Instantiate(serverRpcParams.Receive.SenderClientId == 0 ? _blueTower : _redTower, transform.position,
+            Quaternion.identity).GetComponent<NetworkObject>().Spawn(true);
+
     }
 }
