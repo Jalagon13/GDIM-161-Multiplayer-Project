@@ -54,7 +54,9 @@ public class PlayerNetwork : NetworkBehaviour
 
     public void SpawnScavenger()
     {
+        if (!IsOwner) return;
 
+        SpawnUnitServerRpc(new ServerRpcParams { Receive = new ServerRpcReceiveParams { SenderClientId = OwnerClientId } });
     }
 
     private void InitializeAsBlueTeam()
