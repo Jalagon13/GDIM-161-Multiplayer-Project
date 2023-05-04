@@ -20,6 +20,7 @@ public class PlayerNetwork : NetworkBehaviour
     private DefaultControls _defaultControls;
     private TextMeshProUGUI _scrapBankText;
     private TextMeshProUGUI _scrapRateText;
+    private TowerNode _selectedNode;
 
     private void Awake()
     {
@@ -128,26 +129,30 @@ public class PlayerNetwork : NetworkBehaviour
     //    Instantiate(serverRpcParams.Receive.SenderClientId == 1 ? _scavengerBlueUnit : _scavengerRedUnit).GetComponent<NetworkObject>().Spawn(true);
     //}
 
-    // Possibly do this by making the tower nodes buttons instead and having them fire an event in some tower node manager to all players
     private void OnClick(InputAction.CallbackContext context)
     {
         if (!IsOwner) return;
 
-        Vector2 position = context.ReadValue<Vector2>();
-        Ray rayToPoint = Camera.main.ScreenPointToRay(position);
+        print("eh");
 
-        // Needs a way to check if the node is already taken, probably through a tower node interface
-        if (Physics.Raycast(rayToPoint, Mathf.Infinity, _towerNodeLayer))
+        Vector2 position = Camera.main.ScreenToWorldPoint(context.ReadValue<Vector2>());
+        Collider2D towerNodeHit = Physics2D.OverlapPoint(position, _towerNodeLayer);
+
+        if (towerNodeHit != null)
         {
-            SpawnTowerServerRpc(new ServerRpcParams { Receive = new ServerRpcReceiveParams { SenderClientId = OwnerClientId } });
+            TowerNode _selectedNode = towerNodeHit.transform.GetComponent<TowerNode>();
+
+            if (!_selectedNode.IsOccupied())
+            {
+                SpawnTowerServerRpc(new ServerRpcParams { Receive = new ServerRpcReceiveParams { SenderClientId = OwnerClientId } });
+            }
         }
     }
 
     [ServerRpc]
-    private void SpawnTowerServerRpc(ServerRpcParams serverRpcParams)//, TowerNode node)
+    private void SpawnTowerServerRpc(ServerRpcParams serverRpcParams)
     {
-        Instantiate(serverRpcParams.Receive.SenderClientId == 0 ? _blueTower : _redTower, transform.position,
+        Instantiate(serverRpcParams.Receive.SenderClientId == 0 ? _blueTower : _redTower, _selectedNode.transform.position,
             Quaternion.identity).GetComponent<NetworkObject>().Spawn(true);
-
     }
 }

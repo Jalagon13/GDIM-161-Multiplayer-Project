@@ -1007,13 +1007,14 @@ MonoBehaviour:
   _redPanel: {fileID: 586391045691352548}
   _scavengerBlueUnit: {fileID: 795351051862730394, guid: df4e0433f4f89514395c36d1d3a6feaa, type: 3}
   _scavengerRedUnit: {fileID: 1417181979113900676, guid: 03891ace5e8fa2c47b8eefdfa4a02111, type: 3}
-  _blueTower: {fileID: 0}
-  _redTower: {fileID: 0}
+  _blueTower: {fileID: 926068219578058645, guid: e0f300e70f7577049a98699a0f36ccf7, type: 3}
+  _redTower: {fileID: 3703936845415112890, guid: d4d721bd178caa14cadf2e5a02d012aa, type: 3}
   _towerNodeLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   _currentScrapBank: 250
   _passiveScrapRate: 10
+  _secondsPerRate: 1
 --- !u!1 &3494275691620339702
 GameObject:
   m_ObjectHideFlags: 0

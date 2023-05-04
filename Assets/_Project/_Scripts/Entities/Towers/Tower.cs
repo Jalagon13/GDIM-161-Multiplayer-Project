@@ -1,20 +1,33 @@
 using UnityEngine;
+using System;
 
 [RequireComponent(typeof(IAttackMethod))]
 public class Tower : Unit
 {
+    // bool indicates if the tower is from the red team or not
+    public event Action<bool> OnDestroyed;
+
     private IAttackMethod _attackMethod;
+    private bool _isRed;
 
     protected override void Awake()
     {
         base.Awake();
         _attackMethod = GetComponent<IAttackMethod>();
+
+        string redTeam = "Red";
+        _isRed = gameObject.CompareTag(redTeam);
     }
 
     private void Update()
     {
         if (!_isAttacking)
             FindTarget();
+    }
+
+    public bool IsRed()
+    {
+        return _isRed;
     }
 
     private void FindTarget()
@@ -48,14 +61,20 @@ public class Tower : Unit
             _attackMethod.ExecuteAttack();
         }
     }
+
     private void CheckForResourceNode()
     {
 
     }
 
-    void OnDrawGizmosSelected()
+    private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawSphere(transform.position, _agroRange);
+    }
+
+    private void OnDisable()
+    {
+        OnDestroyed?.Invoke(_isRed);
     }
 }

@@ -1,18 +1,23 @@
 using UnityEngine;
-using Unity.Netcode;
 
-public class TowerNode : NetworkBehaviour
+public class TowerNode : MonoBehaviour
 {
-    private NetworkVariable<bool> _occupied = new NetworkVariable<bool>(false);
+    private Tower _tower;
 
-    public void Occupy()
+    public void Occupy(Tower tower)
     {
-        //_occupied = true;
+        _tower = tower;
+        _tower.OnDestroyed += OnTowerDestroyedEventHandler;
+    }
+
+    private void OnTowerDestroyedEventHandler(bool _)
+    {
+        _tower.OnDestroyed -= OnTowerDestroyedEventHandler;
+        _tower = null;
     }
 
     public bool IsOccupied()
     {
-        return false;
-        //return _occupied;
+        return _tower != null;
     }
 }
