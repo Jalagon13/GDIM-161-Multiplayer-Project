@@ -40,8 +40,8 @@ public class PlayerNetwork : NetworkBehaviour
     {
         if (!IsOwner) return;
 
-        _defaultControls.Debug.SpawnUnit.started += SpawnUnit;
-        _defaultControls.Debug.SpawnOpponentUnit.started += SpawnOpponentUnit;
+        //_defaultControls.Debug.SpawnUnit.started += SpawnUnit;
+        //_defaultControls.Debug.SpawnOpponentUnit.started += SpawnOpponentUnit;
         _defaultControls.Player.Click.started += OnClick;
 
         if (OwnerClientId == 0)
@@ -52,11 +52,16 @@ public class PlayerNetwork : NetworkBehaviour
         UpdateUI();
     }
 
-    public void SpawnScavenger()
+    public void SpawnScavenger() // hooked up to UI buttons
     {
         if (!IsOwner) return;
 
-        SpawnUnitServerRpc(new ServerRpcParams { Receive = new ServerRpcReceiveParams { SenderClientId = OwnerClientId } });
+        if(_currentScrapBank >= 25)
+        {
+            SpawnUnitServerRpc(new ServerRpcParams { Receive = new ServerRpcReceiveParams { SenderClientId = OwnerClientId } });
+            _currentScrapBank -= 25;
+            UpdateUI();
+        }
     }
 
     private void InitializeAsBlueTeam()
@@ -81,20 +86,20 @@ public class PlayerNetwork : NetworkBehaviour
         _scrapRateText.text = $"Scrap Rate: {_passiveScrapRate}";
     }
 
-    private void SpawnUnit(InputAction.CallbackContext context)
-    {
-        if (!IsOwner) return;
+    //private void SpawnUnit(InputAction.CallbackContext context)
+    //{
+    //    if (!IsOwner) return;
 
-        SpawnUnitServerRpc(new ServerRpcParams { Receive = new ServerRpcReceiveParams { SenderClientId = OwnerClientId} });
-    }
+    //    SpawnUnitServerRpc(new ServerRpcParams { Receive = new ServerRpcReceiveParams { SenderClientId = OwnerClientId} });
+    //}
 
-    private void SpawnOpponentUnit(InputAction.CallbackContext context)
-    {
-        // temp method for spawning opponent without another game instance, for testing only
-        if (!IsOwner) return;
+    //private void SpawnOpponentUnit(InputAction.CallbackContext context)
+    //{
+    //    // temp method for spawning opponent without another game instance, for testing only
+    //    if (!IsOwner) return;
 
-        SpawnOpponentUnitServerRpc(new ServerRpcParams { Receive = new ServerRpcReceiveParams { SenderClientId = OwnerClientId } });
-    }
+    //    SpawnOpponentUnitServerRpc(new ServerRpcParams { Receive = new ServerRpcReceiveParams { SenderClientId = OwnerClientId } });
+    //}
 
     [ServerRpc]
     private void SpawnUnitServerRpc(ServerRpcParams serverRpcParams)
@@ -103,13 +108,13 @@ public class PlayerNetwork : NetworkBehaviour
         Instantiate(serverRpcParams.Receive.SenderClientId == 0 ? _scavengerBlueUnit : _scavengerRedUnit).GetComponent<NetworkObject>().Spawn(true);
     }
 
-    [ServerRpc]
-    private void SpawnOpponentUnitServerRpc(ServerRpcParams serverRpcParams)
-    {
-        // temp method for spawning opponent without another game instance, for testing only
-        //Debug.Log($"SpawnUnitServerRpc Callback - SenderClientId: {serverRpcParams.Receive.SenderClientId}");
-        Instantiate(serverRpcParams.Receive.SenderClientId == 1 ? _scavengerBlueUnit : _scavengerRedUnit).GetComponent<NetworkObject>().Spawn(true);
-    }
+    //[ServerRpc]
+    //private void SpawnOpponentUnitServerRpc(ServerRpcParams serverRpcParams)
+    //{
+    //    // temp method for spawning opponent without another game instance, for testing only
+    //    //Debug.Log($"SpawnUnitServerRpc Callback - SenderClientId: {serverRpcParams.Receive.SenderClientId}");
+    //    Instantiate(serverRpcParams.Receive.SenderClientId == 1 ? _scavengerBlueUnit : _scavengerRedUnit).GetComponent<NetworkObject>().Spawn(true);
+    //}
 
     // Possibly do this by making the tower nodes buttons instead and having them fire an event in some tower node manager to all players
     private void OnClick(InputAction.CallbackContext context)
