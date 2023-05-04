@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 1417241009205083553}
   - component: {fileID: 425839071351995603}
   - component: {fileID: 1417241009205083558}
+  - component: {fileID: 8635991409411629713}
   m_Layer: 0
   m_Name: '[Base] Base'
   m_TagString: Untagged
@@ -259,11 +260,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _healthBar: {fileID: 3816538770990646086}
+  _animator: {fileID: 8635991409411629713}
   _maxHP: 300
   _atkDamage: 0
   _atkSpeed: 0
   _agroRange: 0
   _cost: 0
+--- !u!95 &8635991409411629713
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3816538771320529703}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 326581cb5817ca84383ce6cd29a1ef8b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3816538772446999709
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,7 @@ public abstract class Unit : NetworkBehaviour
 {
     [Header("Unit base parameters")]
     [SerializeField] private HealthBar _healthBar;
+    [SerializeField] private Animator _animator;
     [SerializeField] protected int _maxHP;
     [SerializeField] protected int _atkDamage;
     [SerializeField] protected float _atkSpeed; // time it takes to perform an attack
@@ -39,7 +40,7 @@ public abstract class Unit : NetworkBehaviour
     public void DealDamage(int damage)
     {
         _currentHP -= damage;
-
+        _animator.SetTrigger("tookDamage");
         UpdateHP();
     }
 
