@@ -38,19 +38,23 @@ public class PlayerNetwork : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
+        if (!IsOwner) return;
+
         _defaultControls.Debug.SpawnUnit.started += SpawnUnit;
         _defaultControls.Debug.SpawnOpponentUnit.started += SpawnOpponentUnit;
         _defaultControls.Player.Click.started += OnClick;
 
-        if (IsOwner)
-        {
-            if (OwnerClientId == 0)
-                InitializeAsBlueTeam();
-            else
-                InitializeAsRedTeam();
+        if (OwnerClientId == 0)
+            InitializeAsBlueTeam();
+        else
+            InitializeAsRedTeam();
 
-            UpdateUI();
-        }
+        UpdateUI();
+    }
+
+    public void SpawnScavenger()
+    {
+
     }
 
     private void InitializeAsBlueTeam()
