@@ -40,15 +40,24 @@ public class TowerAttack : MonoBehaviour, IAttackMethod
 
         _ctx.UnitBeingAttacked.DealDamage(_ctx.AttackDamage);
 
-        if (_ctx.UnitBeingAttacked.CurrentHP > 0)
+        if (_ctx.UnitBeingAttacked.CurrentHP.Value > 0)
         {
             StartCoroutine(AttackTarget());
         }
         else
         {
             _ctx.IsAttacking = false;
-            StartCoroutine(_ctx.UnitBeingAttacked.Die());
+            if (_ctx.UnitBeingAttacked != null)
+                StartCoroutine(Die());
             yield break;
         }
+    }
+
+    public IEnumerator Die()
+    {
+        _ctx.UnitBeingAttacked.Animator.SetTrigger("dies");
+        yield return new WaitForSeconds(0.8f);
+
+        _ctx.UnitBeingAttacked.GetComponent<NetworkObject>().Despawn(true);
     }
 }

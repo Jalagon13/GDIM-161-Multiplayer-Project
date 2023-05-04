@@ -19,42 +19,45 @@ public abstract class Unit : NetworkBehaviour
     protected LayerMask _unitLayer;
     protected string _tagToAttack;
     protected bool _isAttacking;
-    protected int _currentHP;
+    protected NetworkVariable<int> _currentHP = new(0, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
     protected Unit _unitBeingAttacked;
 
     public Unit UnitBeingAttacked { get { return _unitBeingAttacked; } set { _unitBeingAttacked = value; } }
     public float AttackSpeed { get { return _atkSpeed; } }
     public int AttackDamage { get { return _atkDamage; } }
     public bool IsAttacking { get { return _isAttacking; } set { _isAttacking = value; } }
-    public int CurrentHP { get { return _currentHP; } }
+    public NetworkVariable<int> CurrentHP { get { return _currentHP; } }
+    public Animator Animator { get { return _animator; } }
 
     protected virtual void Awake()
     {
         _unitLayer.value = 6; // six is the "Unit" Layer
         _unitFilter.SetLayerMask(_unitLayer);
         _tagToAttack = gameObject.CompareTag(BLUE_TEAM) ? RED_TEAM : BLUE_TEAM;
-        _currentHP = _maxHP;
+    }
 
-        UpdateHP();
+    public override void OnNetworkSpawn()
+    {
+        _currentHP.OnValueChanged += (int perviousInt, int newInt) =>
+        {
+            UpdateHP();
+        };
+
+        _currentHP.Value = _maxHP;
     }
 
     public void DealDamage(int damage)
     {
-        _currentHP -= damage;
-        _animator.SetTrigger("tookDamage");
+        _currentHP.Value -= damage;
         UpdateHP();
     }
 
     private void UpdateHP()
     {
         if (_healthBar != null)
-            _healthBar.UpdateFill(_currentHP, _maxHP);
+            _healthBar.UpdateFill(_currentHP.Value, _maxHP);
+        _animator.SetTrigger("tookDamage");
     }
 
-    public IEnumerator Die()
-    {
-        _animator.SetTrigger("dies");
-        yield return new WaitForSeconds(0.8f);
-        gameObject.GetComponent<NetworkObject>().Despawn(true);
-    }
+
 }

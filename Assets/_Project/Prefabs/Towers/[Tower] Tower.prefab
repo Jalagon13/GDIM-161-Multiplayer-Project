@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7328529278024650344}
   - component: {fileID: 2005679900802886605}
   - component: {fileID: 4793111351741940438}
+  - component: {fileID: 5558189933613378590}
   m_Layer: 0
   m_Name: Outline
   m_TagString: Untagged
@@ -107,6 +108,26 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5558189933613378590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916538199395216991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d0727d5ae3244e3b569694d3912374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TransitionStateInfoList:
+  - Layer: 0
+    OriginatingState: 375673178
+    DestinationState: 1389601929
+    TransitionDuration: 0
+    TriggerNameHash: 58781827
+    TransitionIndex: 1
+  m_Animator: {fileID: 4793111351741940438}
 --- !u!1 &1519680462088702140
 GameObject:
   m_ObjectHideFlags: 0

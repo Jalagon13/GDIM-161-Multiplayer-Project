@@ -6,19 +6,12 @@ using UnityEngine.SceneManagement;
 public class NetworkManagerUI : MonoBehaviour
 {
     [SerializeField] private string _mainMenuName = "MainMenu";
-    [SerializeField] private Button _serverButton;
     [SerializeField] private Button _hostButton;
     [SerializeField] private Button _clientButton;
     [SerializeField] private Button _quitButton;
 
     private void Awake()
     {
-        _serverButton.onClick.AddListener(() =>
-        {
-            NetworkManager.Singleton.StartServer();
-            gameObject.SetActive(false);
-        });
-
         _hostButton.onClick.AddListener(() =>
         {
             NetworkManager.Singleton.StartHost();

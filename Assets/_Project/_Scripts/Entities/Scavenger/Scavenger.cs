@@ -17,6 +17,7 @@ public class Scavenger : Unit
     {
         base.Awake();
 
+        _rb = GetComponent<Rigidbody2D>();
         _offSet = Random.insideUnitCircle * _spawnOffset;
         transform.position = _path.StartPosition + _offSet;
         _attackMethod = GetComponent<IAttackMethod>();
@@ -24,8 +25,8 @@ public class Scavenger : Unit
 
     public override void OnNetworkSpawn()
     {
-        _rb = GetComponent<Rigidbody2D>();
-
+        base.OnNetworkSpawn();
+        
         CalcMoveDirection();
     }
 

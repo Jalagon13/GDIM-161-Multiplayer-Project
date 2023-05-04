@@ -34,7 +34,7 @@ public class ScavengerAttack : MonoBehaviour, IAttackMethod
 
         _ctx.UnitBeingAttacked.DealDamage(_ctx.AttackDamage);
 
-        if (_ctx.UnitBeingAttacked.CurrentHP > 0)
+        if (_ctx.UnitBeingAttacked.CurrentHP.Value > 0)
         {
             StartCoroutine(AttackTarget());
         }
@@ -42,8 +42,16 @@ public class ScavengerAttack : MonoBehaviour, IAttackMethod
         {
             _ctx.IsAttacking = false;
             if(_ctx.UnitBeingAttacked != null)
-                StartCoroutine(_ctx.UnitBeingAttacked.Die());
+                StartCoroutine(Die());
             yield break;
         }
+    }
+
+    public IEnumerator Die()
+    {
+        _ctx.UnitBeingAttacked.Animator.SetTrigger("dies");
+        yield return new WaitForSeconds(0.8f);
+
+        _ctx.UnitBeingAttacked.GetComponent<NetworkObject>().Despawn(true);
     }
 }
