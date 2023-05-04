@@ -133,8 +133,6 @@ public class PlayerNetwork : NetworkBehaviour
     {
         if (!IsOwner) return;
 
-        print("eh");
-
         Vector2 position = Camera.main.ScreenToWorldPoint(context.ReadValue<Vector2>());
         Collider2D towerNodeHit = Physics2D.OverlapPoint(position, _towerNodeLayer);
 
