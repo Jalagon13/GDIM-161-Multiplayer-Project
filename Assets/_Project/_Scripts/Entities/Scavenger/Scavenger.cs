@@ -53,7 +53,9 @@ public class Scavenger : Unit
 
                 if (unit.CompareTag(_tagToAttack) && distanceBtwn < _agroRange)
                 {
-                    _attackMethod.ExecuteAttack(unit);
+                    _unitBeingAttacked = unit;
+                    _isAttacking = true;
+                    _attackMethod.ExecuteAttack();
                     return;
                 }
             }

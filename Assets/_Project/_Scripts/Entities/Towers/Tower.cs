@@ -43,7 +43,9 @@ public class Tower : Unit
 
         if(closestUnit != default)
         {
-            _attackMethod.ExecuteAttack(closestUnit);
+            _unitBeingAttacked = closestUnit;
+            _isAttacking = true;
+            _attackMethod.ExecuteAttack();
         }
     }
     private void CheckForResourceNode()

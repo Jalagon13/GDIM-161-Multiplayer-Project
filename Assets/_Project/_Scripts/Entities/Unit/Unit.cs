@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -48,5 +49,12 @@ public abstract class Unit : NetworkBehaviour
     {
         if (_healthBar != null)
             _healthBar.UpdateFill(_currentHP, _maxHP);
+    }
+
+    public IEnumerator Die()
+    {
+        _animator.SetTrigger("dies");
+        yield return new WaitForSeconds(0.8f);
+        gameObject.GetComponent<NetworkObject>().Despawn(true);
     }
 }
