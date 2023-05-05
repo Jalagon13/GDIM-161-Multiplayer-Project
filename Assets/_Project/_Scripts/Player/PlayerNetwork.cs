@@ -15,7 +15,7 @@ public class PlayerNetwork : NetworkBehaviour
     [SerializeField] private LayerMask _towerNodeLayer;
     [SerializeField] private int _currentScrapBank = 250;
     [SerializeField] private int _passiveScrapRate = 10; // Rate for scraps
-    [SerializeField] private int _secondsPerRate = 1; // increments SP by rate every _secondsPerRate
+    [SerializeField] private float _secondsPerRate = 3; // increments SP by rate every _secondsPerRate
 
     private DefaultControls _defaultControls;
     private TextMeshProUGUI _scrapBankText;

@@ -49,14 +49,23 @@ public abstract class Unit : NetworkBehaviour
     public void DealDamage(int damage)
     {
         _currentHP.Value -= damage;
+        _animator.SetTrigger("tookDamage");
         UpdateHP();
     }
 
     private void UpdateHP()
     {
         if (_healthBar != null)
+        {
+            // toggle healthbar to show if damage has been taken
+            if (_currentHP.Value < _maxHP)//!_healthBar.gameObject.activeInHierarchy && 
+                _healthBar.gameObject.SetActive(true);
+            else
+                _healthBar.gameObject.SetActive(false);
+
             _healthBar.UpdateFill(_currentHP.Value, _maxHP);
-        _animator.SetTrigger("tookDamage");
+        }
+
     }
 
 

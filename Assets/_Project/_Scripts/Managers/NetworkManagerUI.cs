@@ -30,4 +30,5 @@ public class NetworkManagerUI : MonoBehaviour
             SceneManager.LoadScene(_mainMenuName);
         });
     }
+
 }

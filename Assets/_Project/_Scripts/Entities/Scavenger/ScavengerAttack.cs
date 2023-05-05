@@ -40,18 +40,18 @@ public class ScavengerAttack : MonoBehaviour, IAttackMethod
         }
         else
         {
-            _ctx.IsAttacking = false;
             if(_ctx.UnitBeingAttacked != null)
-                StartCoroutine(Die());
+                StartCoroutine(Kill());
             yield break;
         }
     }
 
-    public IEnumerator Die()
+    public IEnumerator Kill()
     {
         _ctx.UnitBeingAttacked.Animator.SetTrigger("dies");
         yield return new WaitForSeconds(0.8f);
 
         _ctx.UnitBeingAttacked.GetComponent<NetworkObject>().Despawn(true);
+        _ctx.IsAttacking = false;
     }
 }
