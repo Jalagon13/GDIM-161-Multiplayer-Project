@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4bc26016bd5d0a7419b784d5945ee68b, type: 3}
-  m_Name: '[Path] L1 R2B'
+  m_Name: '[Path] R-MID'
   m_EditorClassIdentifier: 
-  _startPosition: {x: 13, y: 0}
-  _endPosition: {x: -16, y: 0}
+  _startPosition: {x: 15, y: 0}
+  _destinations:
+  - {x: -20, y: 0}

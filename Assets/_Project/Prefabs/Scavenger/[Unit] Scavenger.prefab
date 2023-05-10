@@ -977,7 +977,7 @@ MonoBehaviour:
   _cost: 25
   _path: {fileID: 0}
   _moveSpeed: 3
-  _spawnOffset: 0.75
+  _spawnOffset: 0.5
 --- !u!114 &8148020763226076782
 MonoBehaviour:
   m_ObjectHideFlags: 0

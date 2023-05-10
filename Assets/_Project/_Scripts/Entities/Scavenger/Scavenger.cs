@@ -9,6 +9,7 @@ public class Scavenger : Unit
     [SerializeField] private float _spawnOffset; // how far from the center of the spawn point the unit spawns
 
     private Rigidbody2D _rb;
+    private int _moveStep;
     private Vector2 _moveDirection;
     private Vector2 _offSet;
     private IAttackMethod _attackMethod;
@@ -18,6 +19,7 @@ public class Scavenger : Unit
         base.Awake();
 
         _rb = GetComponent<Rigidbody2D>();
+        _moveStep = 0;
         _offSet = Random.insideUnitCircle * _spawnOffset;
         transform.position = _path.StartPosition + _offSet;
         _attackMethod = GetComponent<IAttackMethod>();
@@ -34,6 +36,11 @@ public class Scavenger : Unit
     {
         if (!_isAttacking)
             FindTarget();
+        if (((Vector2)transform.position - _path.Destination(_moveStep)).magnitude <= _spawnOffset)
+        {
+            _moveStep++;
+            CalcMoveDirection();
+        }
     }
 
     private void FixedUpdate()
@@ -65,6 +72,6 @@ public class Scavenger : Unit
 
     private void CalcMoveDirection()
     {
-        _moveDirection = (_path.EndPosition + _offSet - (Vector2)transform.position).normalized;
+        _moveDirection = (_path.Destination(_moveStep) + _offSet - (Vector2)transform.position).normalized;
     }
 }
