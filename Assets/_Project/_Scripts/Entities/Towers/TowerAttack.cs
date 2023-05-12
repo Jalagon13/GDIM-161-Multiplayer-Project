@@ -33,15 +33,11 @@ public class TowerAttack : MonoBehaviour, IAttackMethod
 
     private IEnumerator AttackTarget()
     {
-        //_ctx.UnitBeingAttacked = enemyUnit;
-        //_ctx.IsAttacking = true;
-
-        yield return new WaitForSeconds(_ctx.AttackSpeed);
-
         _ctx.UnitBeingAttacked.DealDamage(_ctx.AttackDamage);
 
         if (_ctx.UnitBeingAttacked.CurrentHP.Value > 0)
         {
+            yield return new WaitForSeconds(_ctx.AttackSpeed);
             StartCoroutine(AttackTarget());
         }
         else

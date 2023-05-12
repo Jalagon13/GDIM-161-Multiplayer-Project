@@ -32,8 +32,10 @@ public class Tower : Unit
 
     private void FindTarget()
     {
-        float distanceCounter = 100f;
-        Unit closestUnit = default;
+        float closest2Base = 100f;
+        if(_isRed)
+            closest2Base *= -1;
+        Unit unit2Attack = default;
         var colliders = Physics2D.OverlapCircleAll(transform.position, _agroRange);
 
         // loop through all Units in colliders to find the closetUnit
@@ -41,22 +43,21 @@ public class Tower : Unit
         {
             if (collider.TryGetComponent(out Unit unit))
             {
-                float distanceBtwn = Vector3.Distance(transform.position, unit.transform.position);
-
-                if (unit.CompareTag(_tagToAttack) && distanceBtwn < _agroRange)
+                if (unit.CompareTag(_tagToAttack) && Vector3.Distance(transform.position, unit.transform.position) < _agroRange)
                 {
-                    if (distanceBtwn < distanceCounter)
+                    // isRed looking for biggest x, isblue looking for smallest x
+                    if ((_isRed && unit.transform.position.x > closest2Base) || (!_isRed && unit.transform.position.x < closest2Base))
                     {
-                        distanceCounter = distanceBtwn;
-                        closestUnit = unit;
+                        closest2Base = unit.transform.position.x;
+                        unit2Attack = unit;
                     }
                 }
             }
         }
 
-        if(closestUnit != default)
+        if(unit2Attack != default)
         {
-            _unitBeingAttacked = closestUnit;
+            _unitBeingAttacked = unit2Attack;
             _isAttacking = true;
             _attackMethod.ExecuteAttack();
         }
