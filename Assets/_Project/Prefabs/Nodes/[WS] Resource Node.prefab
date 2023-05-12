@@ -203,6 +203,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c0d1be38eccfa8408b3ae6b1cea8748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unobtained: {r: 1, g: 0.93725497, b: 0, a: 1}
+  redTeamObtained: {r: 1, g: 0, b: 0, a: 0}
+  blueTeamObtained: {r: 0, g: 0, b: 1, a: 0}
 --- !u!1 &4823902989457465116
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,7 +280,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.32701433, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.9366455, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

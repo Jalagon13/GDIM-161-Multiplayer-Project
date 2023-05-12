@@ -15,6 +15,7 @@ public class PlayerNetwork : NetworkBehaviour
     [SerializeField] private LayerMask _towerNodeLayer;
     [SerializeField] private int _currentScrapBank = 250;
     [SerializeField] private int _passiveScrapRate = 10; // Rate for scraps
+    [SerializeField] private int _resourceNodeScrapIncrease = 10; // How much the scrap rate increases when a resource node is obtained
     [SerializeField] private float _secondsPerRate = 3; // increments SP by rate every _secondsPerRate
 
     private DefaultControls _defaultControls;
@@ -34,12 +35,34 @@ public class PlayerNetwork : NetworkBehaviour
     {
         _defaultControls.Enable();
         StartCoroutine(ScavengeScrapPoints());
+
+        ResourceNode.OnResourceNodeObtained += OnResourceNodeObtainedEventHandler;
+        ResourceNode.OnResourceNodeLost += OnResourceNodeLostEventHandler;
+    }
+
+    private void OnResourceNodeObtainedEventHandler(bool isRed)
+    {
+        if ((isRed && OwnerClientId == 1) || (!isRed && OwnerClientId == 0))
+        {
+            _passiveScrapRate += _resourceNodeScrapIncrease;
+        }
+    }
+
+    private void OnResourceNodeLostEventHandler(bool isRed)
+    {
+        if ((isRed && OwnerClientId == 1) || (!isRed && OwnerClientId == 0))
+        {
+            _passiveScrapRate -= _resourceNodeScrapIncrease;
+        }
     }
 
     private void OnDisable()
     {
         _defaultControls.Disable();
         StopAllCoroutines();
+
+        ResourceNode.OnResourceNodeObtained -= OnResourceNodeObtainedEventHandler;
+        ResourceNode.OnResourceNodeLost -= OnResourceNodeLostEventHandler;
     }
 
     private IEnumerator ScavengeScrapPoints()
