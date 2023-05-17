@@ -23,6 +23,7 @@ public class PlayerNetwork : NetworkBehaviour
     private TextMeshProUGUI _scrapRateText;
     private GameObject _scavengerSpawner;
     private TowerNode _selectedNode;
+    private string _selectedUnit2Spawn;
 
     private void Awake()
     {
@@ -89,19 +90,21 @@ public class PlayerNetwork : NetworkBehaviour
         UpdateUI();
     }
 
-    public void ToggleSpawner()
+    public void ToggleSpawner(string unit)
     {
-        _scavengerSpawner.SetActive(!_scavengerSpawner.activeInHierarchy);
-
+        bool active = _scavengerSpawner.activeInHierarchy;
+        if (!active || (active && unit == _selectedUnit2Spawn)) // toggle if not active or not switching unit selected
+            _scavengerSpawner.SetActive(!active);
+        _selectedUnit2Spawn = unit;
     }
 
-    public void SpawnScavenger(string path) // hooked up to UI buttons
+    public void SpawnUnit(string path) // hooked up to UI buttons
     {
         if (!IsOwner || path.Length > 1) return;
 
         if(_currentScrapBank >= 25)
         {
-            SpawnUnitServerRpc(path[0], new ServerRpcParams { Receive = new ServerRpcReceiveParams { SenderClientId = OwnerClientId } });
+            SpawnUnitServerRpc(_selectedUnit2Spawn, path[0], new ServerRpcParams { Receive = new ServerRpcReceiveParams { SenderClientId = OwnerClientId } });
             _currentScrapBank -= 25;
             UpdateUI();
         }
@@ -113,7 +116,7 @@ public class PlayerNetwork : NetworkBehaviour
         _redPanel.gameObject.SetActive(false);
         _scrapBankText = _bluePanel.GetChild(1).GetComponent<TextMeshProUGUI>();
         _scrapRateText = _bluePanel.GetChild(2).GetComponent<TextMeshProUGUI>();
-        _scavengerSpawner = _bluePanel.GetChild(4).gameObject;
+        _scavengerSpawner = _bluePanel.GetChild(3).gameObject;
     }
 
     private void InitializeAsRedTeam()
@@ -122,7 +125,7 @@ public class PlayerNetwork : NetworkBehaviour
         _bluePanel.gameObject.SetActive(false);
         _scrapBankText = _redPanel.GetChild(1).GetComponent<TextMeshProUGUI>();
         _scrapRateText = _redPanel.GetChild(2).GetComponent<TextMeshProUGUI>();
-        _scavengerSpawner = _redPanel.GetChild(4).gameObject;
+        _scavengerSpawner = _redPanel.GetChild(3).gameObject;
     }
 
     private void UpdateUI()
@@ -147,10 +150,10 @@ public class PlayerNetwork : NetworkBehaviour
     //}
 
     [ServerRpc]
-    private void SpawnUnitServerRpc(char path, ServerRpcParams serverRpcParams)
+    private void SpawnUnitServerRpc(string unit, char path, ServerRpcParams serverRpcParams)
     {
         //Debug.Log($"SpawnUnitServerRpc Callback - SenderClientId: {serverRpcParams.Receive.SenderClientId}");
-        Instantiate(serverRpcParams.Receive.SenderClientId == 0 ? _scavengerBlueUnit.GetUnit(path) : _scavengerRedUnit.GetUnit(path)).GetComponent<NetworkObject>().Spawn(true);
+        Instantiate(serverRpcParams.Receive.SenderClientId == 0 ? _scavengerBlueUnit.SpawnUnit(unit, path) : _scavengerRedUnit.SpawnUnit(unit, path)).GetComponent<NetworkObject>().Spawn(true);
     }
 
     //[ServerRpc]

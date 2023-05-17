@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33f4ddec7a0bdf2409a5e2b0a1a917a9, type: 3}
   m_Name: '[Units] R-Scavenger'
   m_EditorClassIdentifier: 
-  _unitUp: {fileID: 1417181979113900676, guid: 70a2bb8bef2c1f346868befaa2466bc4, type: 3}
-  _unitMid: {fileID: 1417181979113900676, guid: 03891ace5e8fa2c47b8eefdfa4a02111, type: 3}
-  _unitDown: {fileID: 1417181979113900676, guid: c7307a8cbab24a74f9a14169bd1e41d1, type: 3}
+  _scavengerUnits:
+  - {fileID: 1417181979113900676, guid: 70a2bb8bef2c1f346868befaa2466bc4, type: 3}
+  - {fileID: 1417181979113900676, guid: 03891ace5e8fa2c47b8eefdfa4a02111, type: 3}
+  - {fileID: 1417181979113900676, guid: c7307a8cbab24a74f9a14169bd1e41d1, type: 3}
+  _canagoreUnits:
+  - {fileID: 1341902028183847626, guid: 25958e9fd02893148acb38e3a6fffc79, type: 3}
+  - {fileID: 1341902028183847626, guid: 07fb101270a8e734d88e069bcf4ef08f, type: 3}
+  - {fileID: 1341902028183847626, guid: 0042fe50698e0b54cab7c92cf1e8f4c0, type: 3}

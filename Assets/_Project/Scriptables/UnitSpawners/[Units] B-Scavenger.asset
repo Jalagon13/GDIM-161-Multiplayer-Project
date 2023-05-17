@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33f4ddec7a0bdf2409a5e2b0a1a917a9, type: 3}
   m_Name: '[Units] B-Scavenger'
   m_EditorClassIdentifier: 
-  _unitUp: {fileID: 795351051862730394, guid: 8ee216901c7eb6042b7dd9377f79b250, type: 3}
-  _unitMid: {fileID: 795351051862730394, guid: df4e0433f4f89514395c36d1d3a6feaa, type: 3}
-  _unitDown: {fileID: 795351051862730394, guid: 0a0318c0e3600684785a44c2dfbe8d83, type: 3}
+  _scavengerUnits:
+  - {fileID: 795351051862730394, guid: 8ee216901c7eb6042b7dd9377f79b250, type: 3}
+  - {fileID: 795351051862730394, guid: df4e0433f4f89514395c36d1d3a6feaa, type: 3}
+  - {fileID: 795351051862730394, guid: 0a0318c0e3600684785a44c2dfbe8d83, type: 3}
+  _canagoreUnits:
+  - {fileID: 1341902028183847626, guid: 734b0e1a111125544b091c22dd01ccf7, type: 3}
+  - {fileID: 1341902028183847626, guid: d83d484e4c22dc54c85cf19a8ef6af7d, type: 3}
+  - {fileID: 1341902028183847626, guid: a41d6fb8f1cc8de42a8c6bec7ff08195, type: 3}
