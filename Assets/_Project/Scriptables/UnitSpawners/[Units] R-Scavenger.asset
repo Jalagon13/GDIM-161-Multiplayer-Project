@@ -20,3 +20,7 @@ MonoBehaviour:
   - {fileID: 1341902028183847626, guid: 25958e9fd02893148acb38e3a6fffc79, type: 3}
   - {fileID: 1341902028183847626, guid: 07fb101270a8e734d88e069bcf4ef08f, type: 3}
   - {fileID: 1341902028183847626, guid: 0042fe50698e0b54cab7c92cf1e8f4c0, type: 3}
+  _tankerUnits:
+  - {fileID: 7148968640680377290, guid: 215eb30103f397e489004178b6a45d94, type: 3}
+  - {fileID: 7148968640680377290, guid: 316cbd4aaf3978442b7cfabc2b6cb5a6, type: 3}
+  - {fileID: 7148968640680377290, guid: e6cceb894e76c604da9b67f20c354c21, type: 3}

@@ -23,7 +23,6 @@ public class TestRelay : MonoBehaviour
         await AuthenticationService.Instance.SignInAnonymouslyAsync();
     }
 
-    [ContextMenu("CreateRelay")]
     public async void CreateRelay()
     {
         try
@@ -32,7 +31,7 @@ public class TestRelay : MonoBehaviour
 
             string joinCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
 
-            _text.text = joinCode;
+            _text.text = $"JOIN CODE: {joinCode}";
 
             NetworkManager.Singleton.GetComponent<UnityTransport>().SetHostRelayData(
                 allocation.RelayServer.IpV4,
