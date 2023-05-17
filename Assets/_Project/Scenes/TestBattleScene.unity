@@ -16968,6 +16968,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[WS] R DESTROYER NODE (TEST ONLY)'
       objectReference: {fileID: 0}
+    - target: {fileID: 1700029395148494164, guid: 114c10ca52f4d7c478d15d43d9ac6b72, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1700029395148494168, guid: 114c10ca52f4d7c478d15d43d9ac6b72, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -17843,6 +17847,10 @@ PrefabInstance:
     - target: {fileID: 1700029395148494164, guid: 114c10ca52f4d7c478d15d43d9ac6b72, type: 3}
       propertyPath: m_Name
       value: '[WS] B DESTROYER NODE (TEST ONLY)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1700029395148494164, guid: 114c10ca52f4d7c478d15d43d9ac6b72, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1700029395148494168, guid: 114c10ca52f4d7c478d15d43d9ac6b72, type: 3}
       propertyPath: m_RootOrder

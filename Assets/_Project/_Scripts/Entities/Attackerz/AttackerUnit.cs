@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(IAttackMethod))]
-public class Scavenger : Unit
+public class AttackerUnit : Unit
 {
     [Header("Ground Unit Stuff")]
     [SerializeField] private PathObject _path;

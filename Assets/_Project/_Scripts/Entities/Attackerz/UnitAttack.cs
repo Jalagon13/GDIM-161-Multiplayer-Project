@@ -2,7 +2,7 @@ using System.Collections;
 using Unity.Netcode;
 using UnityEngine;
 
-public class ScavengerAttack : MonoBehaviour, IAttackMethod
+public class UnitAttack : MonoBehaviour, IAttackMethod
 {
     private Unit _ctx;
 
