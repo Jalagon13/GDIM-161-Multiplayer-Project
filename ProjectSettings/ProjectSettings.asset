@@ -677,11 +677,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: 4ac8b83c-66bd-4151-896b-f707da7778d4
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: GDIM 161 Multiplayer Project
+  organizationId: jalagon
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
