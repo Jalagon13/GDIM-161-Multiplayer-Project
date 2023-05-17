@@ -1954,7 +1954,7 @@ MonoBehaviour:
   _towerNodeLayer:
     serializedVersion: 2
     m_Bits: 128
-  _currentScrapBank: 250
+  _currentScrapBank: 300
   _passiveScrapRate: 10
   _resourceNodeScrapIncrease: 10
   _secondsPerRate: 3
