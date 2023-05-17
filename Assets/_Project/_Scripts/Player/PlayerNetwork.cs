@@ -89,12 +89,9 @@ public class PlayerNetwork : NetworkBehaviour
         UpdateUI();
     }
 
-    public void ToggleSpawner(bool toggle)
+    public void ToggleSpawner()
     {
-        if (toggle)
-            _scavengerSpawner.SetActive(true);
-        else
-            _scavengerSpawner.SetActive(false);
+        _scavengerSpawner.SetActive(!_scavengerSpawner.activeInHierarchy);
 
     }
 

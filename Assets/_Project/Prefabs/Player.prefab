@@ -134,18 +134,6 @@ MonoBehaviour:
           m_StringArgument: d
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: -743486684837738006}
-        m_TargetAssemblyTypeName: PlayerNetwork, Assembly-CSharp
-        m_MethodName: ToggleSpawner
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &406881367416183296
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,7 +394,7 @@ MonoBehaviour:
       - m_Target: {fileID: -743486684837738006}
         m_TargetAssemblyTypeName: PlayerNetwork, Assembly-CSharp
         m_MethodName: ToggleSpawner
-        m_Mode: 6
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -682,18 +670,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: m
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: -743486684837738006}
-        m_TargetAssemblyTypeName: PlayerNetwork, Assembly-CSharp
-        m_MethodName: ToggleSpawner
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1136224754607151690
@@ -1577,7 +1553,7 @@ MonoBehaviour:
     m_Bits: 128
   _currentScrapBank: 250
   _passiveScrapRate: 10
-  _secondsPerRate: 1
+  _secondsPerRate: 3
 --- !u!1 &3494275691620339702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1830,18 +1806,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: m
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: -743486684837738006}
-        m_TargetAssemblyTypeName: PlayerNetwork, Assembly-CSharp
-        m_MethodName: ToggleSpawner
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &3927226118454124073
@@ -2248,18 +2212,6 @@ MonoBehaviour:
           m_StringArgument: d
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: -743486684837738006}
-        m_TargetAssemblyTypeName: PlayerNetwork, Assembly-CSharp
-        m_MethodName: ToggleSpawner
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &4530244037326319630
 GameObject:
   m_ObjectHideFlags: 0
@@ -2655,7 +2607,7 @@ MonoBehaviour:
       - m_Target: {fileID: -743486684837738006}
         m_TargetAssemblyTypeName: PlayerNetwork, Assembly-CSharp
         m_MethodName: ToggleSpawner
-        m_Mode: 6
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3188,18 +3140,6 @@ MonoBehaviour:
           m_StringArgument: u
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: -743486684837738006}
-        m_TargetAssemblyTypeName: PlayerNetwork, Assembly-CSharp
-        m_MethodName: ToggleSpawner
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &8540199009859460032
 GameObject:
   m_ObjectHideFlags: 0
@@ -3332,18 +3272,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: u
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: -743486684837738006}
-        m_TargetAssemblyTypeName: PlayerNetwork, Assembly-CSharp
-        m_MethodName: ToggleSpawner
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &8570891408335569337
