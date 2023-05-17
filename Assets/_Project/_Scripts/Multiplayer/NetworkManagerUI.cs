@@ -2,6 +2,7 @@ using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class NetworkManagerUI : MonoBehaviour
 {
@@ -14,13 +15,12 @@ public class NetworkManagerUI : MonoBehaviour
     {
         _hostButton.onClick.AddListener(() =>
         {
-            NetworkManager.Singleton.StartHost();
+            //NetworkManager.Singleton.StartHost();
             gameObject.SetActive(false);
         });
 
         _clientButton.onClick.AddListener(() =>
         {
-            NetworkManager.Singleton.StartClient();
             gameObject.SetActive(false);
         });
 
