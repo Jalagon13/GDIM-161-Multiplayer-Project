@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private string _startingLevelName = "TestBattleScene";
+    [SerializeField] private string _startingLevelName = "MainBattleScene";
     [SerializeField] private Button _startButton;
     [SerializeField] private Button _quitButton;
     private void Awake()

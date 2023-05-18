@@ -10,8 +10,6 @@ public class PlayerNetwork : NetworkBehaviour
     [SerializeField] private RectTransform _redPanel;
     [SerializeField] private UnitSpawner _scavengerBlueUnit;
     [SerializeField] private UnitSpawner _scavengerRedUnit;
-    [SerializeField] private GameObject _blueTower;
-    [SerializeField] private GameObject _redTower;
     [SerializeField] private LayerMask _towerNodeLayer;
     [SerializeField] private int _currentScrapBank = 250;
     [SerializeField] private int _passiveScrapRate = 10; // Rate for scraps
@@ -22,7 +20,6 @@ public class PlayerNetwork : NetworkBehaviour
     private TextMeshProUGUI _scrapBankText;
     private TextMeshProUGUI _scrapRateText;
     private GameObject _scavengerSpawner;
-    private TowerNode _selectedNode;
     private string _selectedUnit2Spawn;
 
     private void Awake()
@@ -39,6 +36,30 @@ public class PlayerNetwork : NetworkBehaviour
 
         ResourceNode.OnResourceNodeObtained += OnResourceNodeObtainedEventHandler;
         ResourceNode.OnResourceNodeLost += OnResourceNodeLostEventHandler;
+        TowerNode.NodeClickEvent += TrySpawnTower;
+
+    }
+
+    private void OnDisable()
+    {
+        _defaultControls.Disable();
+        StopAllCoroutines();
+
+        ResourceNode.OnResourceNodeObtained -= OnResourceNodeObtainedEventHandler;
+        ResourceNode.OnResourceNodeLost -= OnResourceNodeLostEventHandler;
+        TowerNode.NodeClickEvent -= TrySpawnTower;
+    }
+
+    private void TrySpawnTower(TowerNode towerNode)
+    {
+        if (!IsOwner) return;
+
+        if (_currentScrapBank >= 250)
+        {
+            _currentScrapBank -= 250;
+            UpdateUI();
+            towerNode.SpawnTower();
+        }
     }
 
     private void OnResourceNodeObtainedEventHandler(bool isRed)
@@ -57,15 +78,6 @@ public class PlayerNetwork : NetworkBehaviour
         }
     }
 
-    private void OnDisable()
-    {
-        _defaultControls.Disable();
-        StopAllCoroutines();
-
-        ResourceNode.OnResourceNodeObtained -= OnResourceNodeObtainedEventHandler;
-        ResourceNode.OnResourceNodeLost -= OnResourceNodeLostEventHandler;
-    }
-
     private IEnumerator ScavengeScrapPoints()
     {
         yield return new WaitForSeconds(_secondsPerRate);
@@ -78,9 +90,8 @@ public class PlayerNetwork : NetworkBehaviour
     {
         if (!IsOwner) return;
 
-        //_defaultControls.Debug.SpawnUnit.started += SpawnUnit;
-        //_defaultControls.Debug.SpawnOpponentUnit.started += SpawnOpponentUnit;
-        _defaultControls.Player.Click.started += OnClick;
+        _defaultControls = new DefaultControls();
+        //_defaultControls.Player.Click.started += OnClick;
 
         if (OwnerClientId == 0)
             InitializeAsBlueTeam();
@@ -139,30 +150,5 @@ public class PlayerNetwork : NetworkBehaviour
     {
         //Debug.Log($"SpawnUnitServerRpc Callback - SenderClientId: {serverRpcParams.Receive.SenderClientId}");
         Instantiate(serverRpcParams.Receive.SenderClientId == 0 ? _scavengerBlueUnit.SpawnUnit(unit, path) : _scavengerRedUnit.SpawnUnit(unit, path)).GetComponent<NetworkObject>().Spawn(true);
-    }
-
-    private void OnClick(InputAction.CallbackContext context)
-    {
-        if (!IsOwner) return;
-
-        Vector2 position = Camera.main.ScreenToWorldPoint(context.ReadValue<Vector2>());
-        Collider2D towerNodeHit = Physics2D.OverlapPoint(position, _towerNodeLayer);
-
-        if (towerNodeHit != null)
-        {
-            TowerNode _selectedNode = towerNodeHit.transform.GetComponent<TowerNode>();
-
-            if (!_selectedNode.IsOccupied())
-            {
-                SpawnTowerServerRpc(new ServerRpcParams { Receive = new ServerRpcReceiveParams { SenderClientId = OwnerClientId } });
-            }
-        }
-    }
-
-    [ServerRpc]
-    private void SpawnTowerServerRpc(ServerRpcParams serverRpcParams)
-    {
-        Instantiate(serverRpcParams.Receive.SenderClientId == 0 ? _blueTower : _redTower, _selectedNode.transform.position,
-            Quaternion.identity).GetComponent<NetworkObject>().Spawn(true);
     }
 }

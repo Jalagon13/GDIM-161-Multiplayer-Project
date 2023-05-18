@@ -1949,8 +1949,8 @@ MonoBehaviour:
   _redPanel: {fileID: 586391045691352548}
   _scavengerBlueUnit: {fileID: 11400000, guid: 7e053f19e57f43647a75eb9717e2808f, type: 2}
   _scavengerRedUnit: {fileID: 11400000, guid: ccccf60f5386e724db52e6b756fc59a7, type: 2}
-  _blueTower: {fileID: 926068219578058645, guid: e0f300e70f7577049a98699a0f36ccf7, type: 3}
-  _redTower: {fileID: 3703936845415112890, guid: d4d721bd178caa14cadf2e5a02d012aa, type: 3}
+  _blueTower: {fileID: 926068219578058667, guid: e0f300e70f7577049a98699a0f36ccf7, type: 3}
+  _redTower: {fileID: 3703936845415112836, guid: d4d721bd178caa14cadf2e5a02d012aa, type: 3}
   _towerNodeLayer:
     serializedVersion: 2
     m_Bits: 128
