@@ -32,7 +32,7 @@ public class PlayerNetwork : NetworkBehaviour
     private void OnEnable()
     {
         _defaultControls.Enable();
-        StartCoroutine(ScavengeScrapPoints());
+        
 
         ResourceNode.OnResourceNodeObtained += OnResourceNodeObtainedEventHandler;
         ResourceNode.OnResourceNodeLost += OnResourceNodeLostEventHandler;
@@ -48,6 +48,47 @@ public class PlayerNetwork : NetworkBehaviour
         ResourceNode.OnResourceNodeObtained -= OnResourceNodeObtainedEventHandler;
         ResourceNode.OnResourceNodeLost -= OnResourceNodeLostEventHandler;
         TowerNode.NodeClickEvent -= TrySpawnTower;
+    }
+
+    public override void OnNetworkSpawn()
+    {
+        if (!IsOwner) return;
+
+        _defaultControls = new DefaultControls();
+        //_defaultControls.Player.Click.started += OnClick;
+
+        if (OwnerClientId == 0)
+            InitializeAsBlueTeam();
+        else
+            InitializeAsRedTeam();
+
+        UpdateUI();
+    }
+
+    private void InitializeAsBlueTeam()
+    {
+        _bluePanel.gameObject.SetActive(true);
+        _redPanel.gameObject.SetActive(false);
+        _scrapBankText = _bluePanel.GetChild(1).GetComponent<TextMeshProUGUI>();
+        _scrapRateText = _bluePanel.GetChild(2).GetComponent<TextMeshProUGUI>();
+        _scavengerSpawner = _bluePanel.GetChild(3).gameObject;
+        StartCoroutine(Delay());
+    }
+
+    private IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(8f);
+        StartCoroutine(ScavengeScrapPoints());
+    }
+
+    private void InitializeAsRedTeam()
+    {
+        _redPanel.gameObject.SetActive(true);
+        _bluePanel.gameObject.SetActive(false);
+        _scrapBankText = _redPanel.GetChild(1).GetComponent<TextMeshProUGUI>();
+        _scrapRateText = _redPanel.GetChild(2).GetComponent<TextMeshProUGUI>();
+        _scavengerSpawner = _redPanel.GetChild(3).gameObject;
+        StartCoroutine(ScavengeScrapPoints());
     }
 
     private void TrySpawnTower(TowerNode towerNode)
@@ -86,21 +127,6 @@ public class PlayerNetwork : NetworkBehaviour
         StartCoroutine(ScavengeScrapPoints());
     }
 
-    public override void OnNetworkSpawn()
-    {
-        if (!IsOwner) return;
-
-        _defaultControls = new DefaultControls();
-        //_defaultControls.Player.Click.started += OnClick;
-
-        if (OwnerClientId == 0)
-            InitializeAsBlueTeam();
-        else
-            InitializeAsRedTeam();
-
-        UpdateUI();
-    }
-
     public void ToggleSpawner(string unit)
     {
         bool active = _scavengerSpawner.activeInHierarchy;
@@ -121,23 +147,7 @@ public class PlayerNetwork : NetworkBehaviour
         }
     }
 
-    private void InitializeAsBlueTeam()
-    {
-        _bluePanel.gameObject.SetActive(true);
-        _redPanel.gameObject.SetActive(false);
-        _scrapBankText = _bluePanel.GetChild(1).GetComponent<TextMeshProUGUI>();
-        _scrapRateText = _bluePanel.GetChild(2).GetComponent<TextMeshProUGUI>();
-        _scavengerSpawner = _bluePanel.GetChild(3).gameObject;
-    }
 
-    private void InitializeAsRedTeam()
-    {
-        _redPanel.gameObject.SetActive(true);
-        _bluePanel.gameObject.SetActive(false);
-        _scrapBankText = _redPanel.GetChild(1).GetComponent<TextMeshProUGUI>();
-        _scrapRateText = _redPanel.GetChild(2).GetComponent<TextMeshProUGUI>();
-        _scavengerSpawner = _redPanel.GetChild(3).gameObject;
-    }
 
     private void UpdateUI()
     {
