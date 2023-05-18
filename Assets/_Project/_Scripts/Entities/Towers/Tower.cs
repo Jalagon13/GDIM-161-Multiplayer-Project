@@ -43,6 +43,8 @@ public class Tower : Unit
         {
             if (collider.TryGetComponent(out Unit unit))
             {
+                if (unit is Tower) return;
+
                 if (unit.CompareTag(_tagToAttack) && Vector3.Distance(transform.position, unit.transform.position) < _agroRange)
                 {
                     // isRed looking for biggest x, isblue looking for smallest x
