@@ -1393,6 +1393,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62abcffa9355e174fb491c625ec7cfa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startingLevelName: TestBattleScene
+  _startingLevelName: MainBattleScene
   _startButton: {fileID: 679051935}
   _quitButton: {fileID: 61830697}
