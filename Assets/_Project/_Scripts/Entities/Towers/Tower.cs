@@ -43,7 +43,7 @@ public class Tower : Unit
         {
             if (collider.TryGetComponent(out Unit unit))
             {
-                if (unit is Tower) return;
+                if (unit is Tower && unit != this) return;
 
                 if (unit.CompareTag(_tagToAttack) && Vector3.Distance(transform.position, unit.transform.position) < _agroRange)
                 {

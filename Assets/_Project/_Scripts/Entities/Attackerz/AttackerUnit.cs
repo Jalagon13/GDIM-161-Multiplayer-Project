@@ -14,32 +14,29 @@ public class AttackerUnit : Unit
     private Vector2 _offSet;
     private IAttackMethod _attackMethod;
 
-    protected override void Awake()
+    public override void OnNetworkSpawn()
     {
-        base.Awake();
+        base.OnNetworkSpawn();
 
         _rb = GetComponent<Rigidbody2D>();
         _moveStep = 0;
         _offSet = Random.insideUnitCircle * _spawnOffset;
         transform.position = _path.StartPosition + _offSet;
         _attackMethod = GetComponent<IAttackMethod>();
-    }
 
-    public override void OnNetworkSpawn()
-    {
-        base.OnNetworkSpawn();
-        
         CalcMoveDirection();
     }
 
     private void Update()
     {
         if (!_isAttacking)
-            FindTarget();
-        if (((Vector2)transform.position - _path.Destination(_moveStep)).magnitude <= _spawnOffset)
         {
-            _moveStep++;
-            CalcMoveDirection();
+            FindTarget();
+            if (((Vector2)transform.position - _path.Destination(_moveStep)).magnitude <= _spawnOffset)
+            {
+                _moveStep++;
+                CalcMoveDirection();
+            }
         }
     }
 

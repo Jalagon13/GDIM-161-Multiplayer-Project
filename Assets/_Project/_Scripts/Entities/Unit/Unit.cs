@@ -65,8 +65,5 @@ public abstract class Unit : NetworkBehaviour
 
             _healthBar.UpdateFill(_currentHP.Value, _maxHP);
         }
-
     }
-
-
 }
