@@ -1377,7 +1377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afa0bce0c0464014fa131145574a887a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startingLevelName: TestBattleScene
+  _startingLevelName: MainBattleScene
   _mainMenuName: MainMenu
   _playAgainButton: {fileID: 679051935}
   _startMenuButton: {fileID: 61830697}

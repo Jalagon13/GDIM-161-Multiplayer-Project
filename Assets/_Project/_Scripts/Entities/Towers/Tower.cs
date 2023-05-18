@@ -21,7 +21,7 @@ public class Tower : Unit
 
     private void Update()
     {
-        if (!_isAttacking)
+        if (!_isAttacking || Vector3.Distance(transform.position, _unitBeingAttacked.transform.position) > _agroRange)
             FindTarget();
     }
 
@@ -43,9 +43,9 @@ public class Tower : Unit
         {
             if (collider.TryGetComponent(out Unit unit))
             {
-                if (unit is Tower && unit != this) return;
+                //if (unit is Tower && unit != this) return;
 
-                if (unit.CompareTag(_tagToAttack) && Vector3.Distance(transform.position, unit.transform.position) < _agroRange)
+                if (unit.CompareTag(_tagToAttack) && Vector3.Distance(transform.position, unit.transform.position) <= _agroRange)
                 {
                     // isRed looking for biggest x, isblue looking for smallest x
                     if ((_isRed && unit.transform.position.x > closest2Base) || (!_isRed && unit.transform.position.x < closest2Base))
