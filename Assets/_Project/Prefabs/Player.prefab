@@ -1953,7 +1953,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   _currentScrapBank: 300
-  _passiveScrapRate: 10
+  _passiveScrapRate: 40
   _resourceNodeScrapIncrease: 10
   _secondsPerRate: 3
 --- !u!1 &3494275691620339702
