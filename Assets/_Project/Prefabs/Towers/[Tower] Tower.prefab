@@ -318,7 +318,6 @@ GameObject:
   - component: {fileID: -1891078038656335910}
   - component: {fileID: 2851793480743062805}
   - component: {fileID: 2851793480743062804}
-  - component: {fileID: -3804089585311764757}
   - component: {fileID: 4229883722581403017}
   m_Layer: 0
   m_Name: '[Tower] Tower'
@@ -431,18 +430,6 @@ MonoBehaviour:
   _atkSpeed: 5
   _agroRange: 3
   _cost: 250
---- !u!114 &-3804089585311764757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2851793480743062826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce90c731529153145ac4462e160f27c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4229883722581403017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,7 +437,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2851793480743062826}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef3756a37b07d3a469b3ad46251a4cac, type: 3}
   m_Name: 

@@ -21,7 +21,7 @@ public class Tower : Unit
 
     private void Update()
     {
-        if (!_isAttacking || Vector3.Distance(transform.position, _unitBeingAttacked.transform.position) > _agroRange)
+        if (!_isAttacking || _unitBeingAttacked == null || Vector3.Distance(transform.position, _unitBeingAttacked.transform.position) > _agroRange)
             FindTarget();
     }
 

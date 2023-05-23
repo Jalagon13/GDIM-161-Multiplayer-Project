@@ -33,6 +33,11 @@ public class TowerAttack : MonoBehaviour, IAttackMethod
 
     private IEnumerator AttackTarget()
     {
+        if (_ctx == null)
+        {
+            _ctx.IsAttacking = false;
+            yield break;
+        }
         _ctx.UnitBeingAttacked.DealDamage(_ctx.AttackDamage);
 
         if (_ctx.UnitBeingAttacked.CurrentHP.Value > 0)
@@ -50,10 +55,13 @@ public class TowerAttack : MonoBehaviour, IAttackMethod
 
     public IEnumerator Kill()
     {
-        _ctx.UnitBeingAttacked.Animator.SetTrigger("dies");
-        yield return new WaitForSeconds(0.8f);
+        if (_ctx.UnitBeingAttacked != null)
+        {
+            _ctx.UnitBeingAttacked.Animator.SetTrigger("dies");
+            yield return new WaitForSeconds(0.8f);
 
-        _ctx.UnitBeingAttacked.GetComponent<NetworkObject>().Despawn(true);
+            _ctx.UnitBeingAttacked.GetComponent<NetworkObject>().Despawn(true);
+        }
         _ctx.IsAttacking = false;
     }
 }

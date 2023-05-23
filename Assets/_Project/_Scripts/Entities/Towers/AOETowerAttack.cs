@@ -20,7 +20,10 @@ public class AOETowerAttack : MonoBehaviour, IAttackMethod
     {
         _ctx = GetComponent<Unit>();
         _blastDamage = (int)(_ctx.AttackDamage * 0.75);
-        _tagToAttack = _ctx.UnitBeingAttacked.tag;
+        if (_ctx.tag == "Blue")
+            _tagToAttack = "Red";
+        else
+            _tagToAttack = "Blue";
     }
 
     private void Update()
@@ -39,16 +42,23 @@ public class AOETowerAttack : MonoBehaviour, IAttackMethod
 
     private IEnumerator AttackTarget()
     {
+        if (_ctx == null)
+        {
+            _ctx.IsAttacking = false;
+            yield break;
+        }
+
         _ctx.UnitBeingAttacked.DealDamage(_ctx.AttackDamage);
         Vector3 targetPos = _ctx.UnitBeingAttacked.transform.position;
 
         var colliders = Physics2D.OverlapCircleAll(targetPos, _blastRange);
-
+        Debug.Log(colliders);
         foreach (Collider2D collider in colliders)
         {
             if (collider.TryGetComponent(out Unit unit))
             {
-                if (unit.CompareTag(_tagToAttack) && unit != _ctx.UnitBeingAttacked && Vector3.Distance(targetPos, unit.transform.position) < _blastRange)
+                if (unit != null && unit.CompareTag(_tagToAttack) &&
+                        unit != _ctx.UnitBeingAttacked )//&& Vector3.Distance(targetPos, unit.transform.position) < _blastRange)
                     unit.DealDamage(_blastDamage);
             }
         }
@@ -68,10 +78,13 @@ public class AOETowerAttack : MonoBehaviour, IAttackMethod
 
     public IEnumerator Kill()
     {
-        _ctx.UnitBeingAttacked.Animator.SetTrigger("dies");
-        yield return new WaitForSeconds(0.8f);
+        if (_ctx.UnitBeingAttacked != null)
+        {
+            _ctx.UnitBeingAttacked.Animator.SetTrigger("dies");
+            yield return new WaitForSeconds(0.8f);
 
-        _ctx.UnitBeingAttacked.GetComponent<NetworkObject>().Despawn(true);
+            _ctx.UnitBeingAttacked.GetComponent<NetworkObject>().Despawn(true);
+        }
         _ctx.IsAttacking = false;
     }
 }

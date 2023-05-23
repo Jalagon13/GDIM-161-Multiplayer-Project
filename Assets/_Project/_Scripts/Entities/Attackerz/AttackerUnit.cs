@@ -7,6 +7,7 @@ public class AttackerUnit : Unit
     [SerializeField] private PathObject _path;
     [SerializeField] private float _moveSpeed;
     [SerializeField] private float _spawnOffset; // how far from the center of the spawn point the unit spawns
+    [SerializeField] private GameObject _sprite;
 
     private Rigidbody2D _rb;
     private int _moveStep;
@@ -21,7 +22,8 @@ public class AttackerUnit : Unit
         _rb = GetComponent<Rigidbody2D>();
         _moveStep = 0;
         _offSet = Random.insideUnitCircle * _spawnOffset;
-        transform.position = _path.StartPosition + _offSet;
+        transform.position = _path.StartPosition;
+        _sprite.transform.position = _path.StartPosition +_offSet;
         _attackMethod = GetComponent<IAttackMethod>();
 
         CalcMoveDirection();

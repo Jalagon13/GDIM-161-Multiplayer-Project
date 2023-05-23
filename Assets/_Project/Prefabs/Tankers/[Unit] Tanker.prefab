@@ -616,6 +616,7 @@ MonoBehaviour:
   _path: {fileID: 0}
   _moveSpeed: 1.5
   _spawnOffset: 0.5
+  _sprite: {fileID: 6439688748943423854}
 --- !u!114 &8148020763226076782
 MonoBehaviour:
   m_ObjectHideFlags: 0
