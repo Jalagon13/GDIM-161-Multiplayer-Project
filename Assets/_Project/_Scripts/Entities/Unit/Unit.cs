@@ -22,6 +22,7 @@ public abstract class Unit : NetworkBehaviour
     protected NetworkVariable<int> _currentHP = new(0, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
     protected Unit _unitBeingAttacked;
 
+    public int Cost { get { return _cost; } }
     public Unit UnitBeingAttacked { get { return _unitBeingAttacked; } set { _unitBeingAttacked = value; } }
     public float AttackSpeed { get { return _atkSpeed; } }
     public int AttackDamage { get { return _atkDamage; } }

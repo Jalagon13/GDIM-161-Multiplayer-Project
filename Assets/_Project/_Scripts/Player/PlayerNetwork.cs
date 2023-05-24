@@ -139,10 +139,11 @@ public class PlayerNetwork : NetworkBehaviour
     {
         if (!IsOwner || path.Length > 1) return;
 
-        if(_currentScrapBank >= 25)
+        int cost = _scavengerBlueUnit.Cost(_selectedUnit2Spawn);
+        if (_currentScrapBank >= cost)
         {
             SpawnUnitServerRpc(_selectedUnit2Spawn, path[0], new ServerRpcParams { Receive = new ServerRpcReceiveParams { SenderClientId = OwnerClientId } });
-            _currentScrapBank -= 25;
+            _currentScrapBank -= cost;
             UpdateUI();
         }
     }

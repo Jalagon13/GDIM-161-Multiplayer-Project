@@ -8,6 +8,23 @@ public class UnitSpawner : ScriptableObject
     [SerializeField] private GameObject[] _canagoreUnits;
     [SerializeField] private GameObject[] _tankerUnits;
 
+    public int Cost(string unit)
+    {
+        switch (unit)
+        {
+            case "scavenger":
+                return _scavengerUnits[0].GetComponent<Unit>().Cost;
+            case "canagore":
+                return _canagoreUnits[0].GetComponent<Unit>().Cost;
+            case "tanker":
+                return _tankerUnits[0].GetComponent<Unit>().Cost;
+
+            default:
+                Debug.Log(unit + "unit not found");
+                return -1;
+        }
+    }
+
     public GameObject SpawnUnit(string unit, char path)
     {
         // get the corresponding units

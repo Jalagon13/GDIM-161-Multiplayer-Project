@@ -3,12 +3,10 @@ using Unity.Netcode;
 using UnityEngine;
 
 /// <summary>
-/// For now TowerAttack is exactly the same functionality as the ScavengerAttack 
-/// but this may change if we want to add different functionality for the tower or for
-/// when we add different animations for the tower
+/// AOE Attack damages all enemy Unit objects within the specified blast range
 /// </summary>
 
-public class AOETowerAttack : MonoBehaviour, IAttackMethod
+public class AOEAttack : MonoBehaviour, IAttackMethod
 {
     [SerializeField] private float _blastRange;
 

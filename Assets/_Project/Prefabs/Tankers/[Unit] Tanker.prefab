@@ -457,7 +457,7 @@ GameObject:
   - component: {fileID: 7095149778857525218}
   - component: {fileID: 7095149778857525219}
   - component: {fileID: 7095149778857525148}
-  - component: {fileID: 8148020763226076782}
+  - component: {fileID: -5899540630845316555}
   m_Layer: 6
   m_Name: '[Unit] Tanker'
   m_TagString: Untagged
@@ -617,7 +617,7 @@ MonoBehaviour:
   _moveSpeed: 1.5
   _spawnOffset: 0.5
   _sprite: {fileID: 6439688748943423854}
---- !u!114 &8148020763226076782
+--- !u!114 &-5899540630845316555
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -626,9 +626,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7095149778857525216}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05f4aef25ea44b0458b9ce28566fe546, type: 3}
+  m_Script: {fileID: 11500000, guid: ef3756a37b07d3a469b3ad46251a4cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _blastRange: 1
 --- !u!1 &9103166735323393952
 GameObject:
   m_ObjectHideFlags: 0
