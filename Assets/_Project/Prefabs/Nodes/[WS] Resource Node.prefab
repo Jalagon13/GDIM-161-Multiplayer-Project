@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 4823902989050225485}
   - component: {fileID: 2985014700271952882}
   - component: {fileID: 1562995476414381840}
+  - component: {fileID: 2721475946775651027}
   m_Layer: 0
   m_Name: '[WS] Resource Node'
   m_TagString: Untagged
@@ -203,9 +204,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c0d1be38eccfa8408b3ae6b1cea8748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  render: {fileID: 4823902989457465114}
   unobtained: {r: 1, g: 0.93725497, b: 0, a: 1}
-  redTeamObtained: {r: 1, g: 0, b: 0, a: 0}
-  blueTeamObtained: {r: 0, g: 0, b: 1, a: 0}
+  redTeamObtained: {r: 1, g: 0, b: 0, a: 1}
+  blueTeamObtained: {r: 0, g: 0, b: 1, a: 1}
+--- !u!50 &2721475946775651027
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4823902989050225486}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &4823902989457465116
 GameObject:
   m_ObjectHideFlags: 0
