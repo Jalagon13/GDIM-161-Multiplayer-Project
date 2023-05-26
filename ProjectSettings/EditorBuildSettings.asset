@@ -20,7 +20,4 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Project/Scenes/TestBattleScene.unity
     guid: 19b1e5c1478841241a4a45f5791bccd6
-  - enabled: 0
-    path: Assets/LobbyTutorial/LobbyTutorial_Done.unity
-    guid: be8200a558cfff84b8ce074fa6e33558
   m_configObjects: {}
