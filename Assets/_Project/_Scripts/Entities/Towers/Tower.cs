@@ -78,6 +78,7 @@ public class Tower : Unit
 
     private void OnDisable()
     {
-        OnDestroyed?.Invoke(_isRed);
+        if(OnDestroyed != null)
+            OnDestroyed?.Invoke(_isRed);
     }
 }

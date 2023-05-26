@@ -8,6 +8,7 @@ public class PlayerNetwork : NetworkBehaviour
 {
     [SerializeField] private RectTransform _bluePanel;
     [SerializeField] private RectTransform _redPanel;
+    [SerializeField] private RectTransform _spectatorPanel;
     [SerializeField] private UnitSpawner _scavengerBlueUnit;
     [SerializeField] private UnitSpawner _scavengerRedUnit;
     [SerializeField] private LayerMask _towerNodeLayer;
@@ -21,6 +22,8 @@ public class PlayerNetwork : NetworkBehaviour
     private TextMeshProUGUI _scrapRateText;
     private GameObject _scavengerSpawner;
     private string _selectedUnit2Spawn;
+    private bool _gameStarted = false;
+    private RectTransform _playerPanel;
 
     private void Awake()
     {
@@ -29,7 +32,26 @@ public class PlayerNetwork : NetworkBehaviour
         _defaultControls = new DefaultControls();
     }
 
-    private void OnEnable()
+    private void FixedUpdate()
+    {
+        if (!_gameStarted)
+        {
+            if (GameObject.FindGameObjectsWithTag("Player").Length >= 2)
+            {
+                _gameStarted = true;
+                if (OwnerClientId >= 2)
+                    _spectatorPanel.gameObject.SetActive(true);
+                else
+                {
+                    _playerPanel.gameObject.SetActive(true);
+                    StartCoroutine(ScavengeScrapPoints());
+                    UpdateUI();
+                }
+            }
+        }
+    }
+
+        private void OnEnable()
     {
         _defaultControls.Enable();
         
@@ -59,39 +81,29 @@ public class PlayerNetwork : NetworkBehaviour
 
         if (OwnerClientId == 0)
             InitializeAsBlueTeam();
-        else
+        else if (OwnerClientId == 1)
             InitializeAsRedTeam();
-
-        UpdateUI();
+        else
+            _playerPanel = _spectatorPanel;
     }
 
     private void InitializeAsBlueTeam()
     {
-        _bluePanel.gameObject.SetActive(true);
-        _redPanel.gameObject.SetActive(false);
         _scrapBankText = _bluePanel.GetChild(1).GetComponent<TextMeshProUGUI>();
         _scrapRateText = _bluePanel.GetChild(2).GetComponent<TextMeshProUGUI>();
         _scavengerSpawner = _bluePanel.GetChild(3).gameObject;
-        StartCoroutine(Delay());
-    }
-
-    private IEnumerator Delay()
-    {
-        yield return new WaitForSeconds(8f);
-        StartCoroutine(ScavengeScrapPoints());
+        _playerPanel = _bluePanel;
     }
 
     private void InitializeAsRedTeam()
     {
-        _redPanel.gameObject.SetActive(true);
-        _bluePanel.gameObject.SetActive(false);
         _scrapBankText = _redPanel.GetChild(1).GetComponent<TextMeshProUGUI>();
         _scrapRateText = _redPanel.GetChild(2).GetComponent<TextMeshProUGUI>();
         _scavengerSpawner = _redPanel.GetChild(3).gameObject;
-        StartCoroutine(ScavengeScrapPoints());
+        _playerPanel = _redPanel;
     }
 
-    private void TrySpawnTower(TowerNode towerNode)
+        private void TrySpawnTower(TowerNode towerNode)
     {
         if (!IsOwner) return;
 
@@ -147,8 +159,6 @@ public class PlayerNetwork : NetworkBehaviour
             UpdateUI();
         }
     }
-
-
 
     private void UpdateUI()
     {

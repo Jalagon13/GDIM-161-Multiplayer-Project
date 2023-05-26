@@ -6,11 +6,15 @@ using Unity.Services.Core;
 using Unity.Services.Relay;
 using Unity.Services.Relay.Models;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class TestRelay : MonoBehaviour
+public class RelayManager : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI _text;
-    private string _joinCode;
+    [SerializeField] private GameObject _networkManagerUI;
+    [SerializeField] private string _mainMenuName = "MainMenu";
+    [SerializeField] private TMP_InputField _joinInput;
+    [SerializeField] private TextMeshProUGUI _joinText;
+    [SerializeField] private TextMeshProUGUI _lobbyText;
 
     private async void Start()
     {
@@ -27,11 +31,16 @@ public class TestRelay : MonoBehaviour
     {
         try
         {
+            _networkManagerUI.SetActive(false);
+            _lobbyText.SetText("Creating game, please wait...");
+            _lobbyText.gameObject.SetActive(true);
+
             Allocation allocation = await RelayService.Instance.CreateAllocationAsync(1);
 
             string joinCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
 
-            _text.text = $"JOIN CODE: {joinCode}";
+            _joinText.text = $"{joinCode}";
+            _joinText.gameObject.transform.parent.gameObject.SetActive(true);
 
             NetworkManager.Singleton.GetComponent<UnityTransport>().SetHostRelayData(
                 allocation.RelayServer.IpV4,
@@ -42,19 +51,30 @@ public class TestRelay : MonoBehaviour
             );
 
             NetworkManager.Singleton.StartHost();
+            _lobbyText.SetText("Game created!\nHave the other player enter the code below to join!");
         }
         catch(RelayServiceException e)
         {
             Debug.Log(e);
+            _lobbyText.SetText("Error creating game, please quit and try again.");
         }
     }
 
     public async void JoinRelay()
     {
-        try
+        string joinCode = _joinInput.text;
+        Debug.Log(joinCode);
+        if (joinCode.Length < 6)
         {
-            Debug.Log($"Joining relay with {_joinCode}");
-            JoinAllocation joinAllocation = await RelayService.Instance.JoinAllocationAsync(_joinCode);
+            _lobbyText.SetText("Enter a 6 character alphanumeric code to join a game");
+            _lobbyText.gameObject.SetActive(true);
+            return;
+        }
+            try
+        {
+            _lobbyText.SetText("Connecting to game, please wait...");
+            Debug.Log($"Joining relay with {joinCode}");
+            JoinAllocation joinAllocation = await RelayService.Instance.JoinAllocationAsync(joinCode);
 
             NetworkManager.Singleton.GetComponent<UnityTransport>().SetClientRelayData(
                 joinAllocation.RelayServer.IpV4,
@@ -65,17 +85,26 @@ public class TestRelay : MonoBehaviour
                 joinAllocation.HostConnectionData
             );
 
+            _networkManagerUI.SetActive(false);
             NetworkManager.Singleton.StartClient();
+            _lobbyText.SetText("Joined! Waiting for game to begin...");
         }
         catch (RelayServiceException e)
         {
             Debug.Log(e);
+            _lobbyText.SetText("Error joining game.\nPlease check you entered the correct code, then try again.");
         }
+        _lobbyText.gameObject.SetActive(true);
     }
 
-    public void ReadStringInput(string s)
+    public void HideMessage()
     {
-        _joinCode = s;
-        Debug.Log(_joinCode);
+        _lobbyText.gameObject.SetActive(false);
+    }
+
+    public void QuitGame()
+    {
+        NetworkManager.Singleton.Shutdown();
+        SceneManager.LoadScene(_mainMenuName);
     }
 }
