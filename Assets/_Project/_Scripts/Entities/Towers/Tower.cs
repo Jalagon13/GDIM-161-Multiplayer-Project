@@ -38,6 +38,7 @@ public class Tower : Unit
     {
         base.OnNetworkSpawn();
         _buildTimerText.enabled = true;
+        _buildTimerText.text = $"({_buildTimer}) Building...";
         _isBuilding = true;
         StartCoroutine(Building());
     }
