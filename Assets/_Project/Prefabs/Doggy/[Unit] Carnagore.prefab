@@ -602,7 +602,7 @@ MonoBehaviour:
   _atkDamage: 15
   _atkSpeed: 2
   _agroRange: 1
-  _cost: 35
+  _cost: 40
   _path: {fileID: 0}
   _moveSpeed: 4
   _spawnOffset: 0.5

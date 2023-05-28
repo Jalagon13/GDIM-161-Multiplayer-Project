@@ -3,6 +3,7 @@ using TMPro;
 using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerNetwork : NetworkBehaviour
 {
@@ -16,14 +17,17 @@ public class PlayerNetwork : NetworkBehaviour
     [SerializeField] private int _passiveScrapRate = 10; // Rate for scraps
     [SerializeField] private int _resourceNodeScrapIncrease = 10; // How much the scrap rate increases when a resource node is obtained
     [SerializeField] private float _secondsPerRate = 3; // increments SP by rate every _secondsPerRate
+    [SerializeField] private int _currentSeconds = 300;
 
     private DefaultControls _defaultControls;
     private TextMeshProUGUI _scrapBankText;
     private TextMeshProUGUI _scrapRateText;
+    private TextMeshProUGUI _countDownText;
     private GameObject _scavengerSpawner;
+    private RectTransform _playerPanel;
     private string _selectedUnit2Spawn;
     private bool _gameStarted = false;
-    private RectTransform _playerPanel;
+    
 
     private void Awake()
     {
@@ -45,6 +49,7 @@ public class PlayerNetwork : NetworkBehaviour
                 {
                     _playerPanel.gameObject.SetActive(true);
                     StartCoroutine(ScavengeScrapPoints());
+                    StartCoroutine(CountDownTimer());
                     UpdateUI();
                 }
             }
@@ -92,6 +97,7 @@ public class PlayerNetwork : NetworkBehaviour
         _scrapBankText = _bluePanel.GetChild(1).GetComponent<TextMeshProUGUI>();
         _scrapRateText = _bluePanel.GetChild(2).GetComponent<TextMeshProUGUI>();
         _scavengerSpawner = _bluePanel.GetChild(3).gameObject;
+        _countDownText = _bluePanel.GetChild(4).GetComponent<TextMeshProUGUI>();
         _playerPanel = _bluePanel;
     }
 
@@ -100,6 +106,7 @@ public class PlayerNetwork : NetworkBehaviour
         _scrapBankText = _redPanel.GetChild(1).GetComponent<TextMeshProUGUI>();
         _scrapRateText = _redPanel.GetChild(2).GetComponent<TextMeshProUGUI>();
         _scavengerSpawner = _redPanel.GetChild(3).gameObject;
+        _countDownText = _redPanel.GetChild(4).GetComponent<TextMeshProUGUI>();
         _playerPanel = _redPanel;
     }
 
@@ -139,6 +146,22 @@ public class PlayerNetwork : NetworkBehaviour
         StartCoroutine(ScavengeScrapPoints());
     }
 
+    private IEnumerator CountDownTimer()
+    {
+        yield return new WaitForSeconds(1);
+
+        if(_currentSeconds <= 0)
+        {
+            NetworkManager.Singleton.Shutdown();
+            SceneManager.LoadScene("MainMenu");
+        }
+
+        _currentSeconds--;
+        UpdateUI();
+
+        StartCoroutine(CountDownTimer());
+    }
+
     public void ToggleSpawner(string unit)
     {
         bool active = _scavengerSpawner.activeInHierarchy;
@@ -164,6 +187,7 @@ public class PlayerNetwork : NetworkBehaviour
     {
         _scrapBankText.text = $"Scrap Bank: {_currentScrapBank}";
         _scrapRateText.text = $"Scrap Rate: {_passiveScrapRate}";
+        _countDownText.text = $"Timer: {_currentSeconds}";
     }
 
     [ServerRpc]
