@@ -1,5 +1,7 @@
 using UnityEngine;
 using System;
+using System.Collections;
+using TMPro;
 
 [RequireComponent(typeof(IAttackMethod))]
 public class Tower : Unit
@@ -7,8 +9,13 @@ public class Tower : Unit
     // bool indicates if the tower is from the red team or not
     public event Action<bool> OnDestroyed;
 
+    [Header("Tower PARAMS")]
+    [SerializeField] private TextMeshProUGUI _buildTimerText;
+    [SerializeField] private int _buildTimer;
+
     private IAttackMethod _attackMethod;
     private bool _isRed;
+    private bool _isBuilding;
 
     protected override void Awake()
     {
@@ -19,10 +26,37 @@ public class Tower : Unit
         _isRed = gameObject.CompareTag(redTeam);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
+        if (_isBuilding) return;
+
         if (!_isAttacking || _unitBeingAttacked == null || Vector3.Distance(transform.position, _unitBeingAttacked.transform.position) > _agroRange)
             FindTarget();
+    }
+
+    public override void OnNetworkSpawn()
+    {
+        base.OnNetworkSpawn();
+        _buildTimerText.enabled = true;
+        _isBuilding = true;
+        StartCoroutine(Building());
+    }
+
+    private IEnumerator Building()
+    {
+        yield return new WaitForSeconds(1);
+
+        if(_buildTimer <= 0)
+        {
+            _buildTimerText.enabled = false;
+            _isBuilding = false;
+        }
+        else
+        {
+            _buildTimer--;
+            _buildTimerText.text = $"({_buildTimer}) Building...";
+            StartCoroutine(Building());
+        }
     }
 
     public bool IsRed()
