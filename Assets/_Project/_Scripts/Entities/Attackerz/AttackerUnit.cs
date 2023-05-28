@@ -29,7 +29,7 @@ public class AttackerUnit : Unit
         CalcMoveDirection();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (!_isAttacking)
         {
@@ -39,13 +39,9 @@ public class AttackerUnit : Unit
                 _moveStep++;
                 CalcMoveDirection();
             }
-        }
-    }
 
-    private void FixedUpdate()
-    {
-        if (!_isAttacking)
             _rb.MovePosition(_rb.position + _moveDirection * _moveSpeed * Time.deltaTime);
+        }
     }
 
     private void FindTarget()

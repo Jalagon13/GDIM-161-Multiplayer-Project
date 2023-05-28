@@ -611,11 +611,11 @@ MonoBehaviour:
   _maxHP: 200
   _atkDamage: 50
   _atkSpeed: 7
-  _agroRange: 2
+  _agroRange: 2.5
   _cost: 175
   _path: {fileID: 0}
   _moveSpeed: 1.5
-  _spawnOffset: 0.5
+  _spawnOffset: 0.25
   _sprite: {fileID: 6439688748943423854}
 --- !u!114 &-5899540630845316555
 MonoBehaviour:
