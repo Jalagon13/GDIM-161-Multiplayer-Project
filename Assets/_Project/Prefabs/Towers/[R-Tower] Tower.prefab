@@ -357,10 +357,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[R-Tower] Tower'
       objectReference: {fileID: 0}
-    - target: {fileID: 2851793480743062826, guid: 2d3884338ebb03a40a1465e468f1b8e8, type: 3}
-      propertyPath: m_TagString
-      value: Red
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d3884338ebb03a40a1465e468f1b8e8, type: 3}
 --- !u!4 &3703936845415112839 stripped
