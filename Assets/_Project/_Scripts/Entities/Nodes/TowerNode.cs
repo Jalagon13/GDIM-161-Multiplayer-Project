@@ -14,7 +14,14 @@ public class TowerNode : NetworkBehaviour, IPointerClickHandler
     [SerializeField] private GameObject _redSprite; 
     [SerializeField] private GameObject _blueSprite; 
 
+    private Animator _animator;
     private Tower _tower;
+
+    public override void OnNetworkSpawn()
+    {
+        base.OnNetworkSpawn();
+        _animator = GetComponent<Animator>();
+    }
 
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -39,7 +46,7 @@ public class TowerNode : NetworkBehaviour, IPointerClickHandler
 
     public void Occupy(Tower tower)
     {
-        Debug.Log(tower.gameObject.tag);
+        _animator.enabled = false;  
 
         if (tower.gameObject.CompareTag("Red"))
         {
@@ -60,6 +67,7 @@ public class TowerNode : NetworkBehaviour, IPointerClickHandler
 
     private void OnTowerDestroyedEventHandler(bool _)
     {
+        _animator.enabled = true;
         _neutralSprite.SetActive(true);
         _redSprite.SetActive(false);
         _blueSprite.SetActive(false);

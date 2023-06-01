@@ -50,7 +50,6 @@ public class AOEAttack : MonoBehaviour, IAttackMethod
         Vector3 targetPos = _ctx.UnitBeingAttacked.transform.position;
 
         var colliders = Physics2D.OverlapCircleAll(targetPos, _blastRange);
-        Debug.Log(colliders);
         foreach (Collider2D collider in colliders)
         {
             if (collider.TryGetComponent(out Unit unit))
