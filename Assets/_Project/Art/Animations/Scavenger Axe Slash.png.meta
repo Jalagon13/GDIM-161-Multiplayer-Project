@@ -1,0 +1,1003 @@
+fileFormatVersion: 2
+guid: 1502f8754c254ea49a8e8134bd901b94
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2668
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d51c6eda8f6ac24a9ce553cb097b36e
+      internalID: -1637907314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_1
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 2668
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732e8def15061ea408c7f95d785e72dc
+      internalID: 1218884909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_2
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 2668
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e8d1a1416a0734abec0a701d468581
+      internalID: -1547325175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_3
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 2668
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df72a5acf79716141b79780123876853
+      internalID: -333927839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_4
+      rect:
+        serializedVersion: 2
+        x: 2604
+        y: 2668
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7493276eb7fbd8d44b33f5d8a97b055c
+      internalID: -936739106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_5
+      rect:
+        serializedVersion: 2
+        x: 3255
+        y: 2668
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30709309b3e3c147bd1af3df6a2fcf8
+      internalID: 496297463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_6
+      rect:
+        serializedVersion: 2
+        x: 3906
+        y: 2668
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48eee870e38098b4abba64b185742e9b
+      internalID: -1130638592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_7
+      rect:
+        serializedVersion: 2
+        x: 4557
+        y: 2668
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f3e070a8c7c5d449160e96eb27bbd6
+      internalID: 437390415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2001
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419405f83e9274246923c86cd5a58aea
+      internalID: 2095476500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_9
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 2001
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e8e02da8ed4e446bbbcaeb162fca7c
+      internalID: -925260575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_10
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 2001
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc4f90b1f526d6438b928eb49f0f6c8
+      internalID: 633911599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_11
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 2001
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a40ff0fa6fbf81499b3a2c9a3793431
+      internalID: -1670231985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_12
+      rect:
+        serializedVersion: 2
+        x: 2604
+        y: 2001
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc93b2a25c88367498eb95b2f3bb21e4
+      internalID: -1924661712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_13
+      rect:
+        serializedVersion: 2
+        x: 3255
+        y: 2001
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6e25e980a81e04082594c02ebd2a3a
+      internalID: -870329398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_14
+      rect:
+        serializedVersion: 2
+        x: 3906
+        y: 2001
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453054224b118044196098cc4e0e90b3
+      internalID: 1875336009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_15
+      rect:
+        serializedVersion: 2
+        x: 4557
+        y: 2001
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61197dee7e051154cb537076f1c5a688
+      internalID: -816963238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1334
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555fd2873b4e07b40b045aa2c52a3585
+      internalID: -1427648610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_17
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 1334
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b12552221ada9d43a3a61d7a3c1871d
+      internalID: 2105467860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_18
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 1334
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c36504314299c49a984ca5ecc8821b
+      internalID: 336537072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_19
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 1334
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e5c486732383747b3ca388e953bdc9
+      internalID: -1975757799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_20
+      rect:
+        serializedVersion: 2
+        x: 2604
+        y: 1334
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3624bdb39a5ca734984d4c3fa5bf7dbe
+      internalID: -1849979511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_21
+      rect:
+        serializedVersion: 2
+        x: 3255
+        y: 1334
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec45498394fc98642824b0d745c8e336
+      internalID: -1677806935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_22
+      rect:
+        serializedVersion: 2
+        x: 3906
+        y: 1334
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3be5e21fe56b5498ae25424408a674
+      internalID: 305606723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_23
+      rect:
+        serializedVersion: 2
+        x: 4557
+        y: 1334
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868a790d90c9cd84db999716281df224
+      internalID: -1585833934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 667
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e571e03b21596468e32e3a76326a07
+      internalID: -1567144852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_25
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 667
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f312c7fdf90b3f84cae541cc54ff2de1
+      internalID: -615810027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_26
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 667
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea64646c8b77ba947b27e9d54b29b1b0
+      internalID: 447964569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_27
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 667
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669be8365d6442a4894418dc3140e0ed
+      internalID: -1691723544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_28
+      rect:
+        serializedVersion: 2
+        x: 2604
+        y: 667
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5eb080f13fc44d448c2768808de1b84
+      internalID: -1073343190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_29
+      rect:
+        serializedVersion: 2
+        x: 3255
+        y: 667
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25dbe7e36a9eda04282a789790081db0
+      internalID: 1879873807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_30
+      rect:
+        serializedVersion: 2
+        x: 3906
+        y: 667
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e47f487da29cf4f82147fc836cbd9e
+      internalID: 360593246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_31
+      rect:
+        serializedVersion: 2
+        x: 4557
+        y: 667
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8649a57b58cd54a8d5e69ad807e8f1
+      internalID: -2048589377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf8194b0258d5742a625289643535f0
+      internalID: -544883987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_33
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 0
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbec881dcccba3748bfb954980e0f5a9
+      internalID: -1448267376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_34
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 0
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe2048bcb21c2f4b9cbdbeaafcd48be
+      internalID: -555748490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_35
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 0
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0006f7107359bff48b4daf1ec945b84c
+      internalID: 1624716875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_36
+      rect:
+        serializedVersion: 2
+        x: 2604
+        y: 0
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff37503e54658c4bb22b4e8ba7b27c6
+      internalID: 192552630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_37
+      rect:
+        serializedVersion: 2
+        x: 3255
+        y: 0
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36fd9159289023d40a7a429dac4680a8
+      internalID: -1309885017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_38
+      rect:
+        serializedVersion: 2
+        x: 3906
+        y: 0
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a672ac9d1cc8721429d5bfacffdebf1f
+      internalID: 871543854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Axe Slash_39
+      rect:
+        serializedVersion: 2
+        x: 4557
+        y: 0
+        width: 651
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dfa3fad4ad100148a24e419e3fd1ce7
+      internalID: -1651391873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Scavenger Axe Slash_0: -1637907314
+      Scavenger Axe Slash_1: 1218884909
+      Scavenger Axe Slash_10: 633911599
+      Scavenger Axe Slash_11: -1670231985
+      Scavenger Axe Slash_12: -1924661712
+      Scavenger Axe Slash_13: -870329398
+      Scavenger Axe Slash_14: 1875336009
+      Scavenger Axe Slash_15: -816963238
+      Scavenger Axe Slash_16: -1427648610
+      Scavenger Axe Slash_17: 2105467860
+      Scavenger Axe Slash_18: 336537072
+      Scavenger Axe Slash_19: -1975757799
+      Scavenger Axe Slash_2: -1547325175
+      Scavenger Axe Slash_20: -1849979511
+      Scavenger Axe Slash_21: -1677806935
+      Scavenger Axe Slash_22: 305606723
+      Scavenger Axe Slash_23: -1585833934
+      Scavenger Axe Slash_24: -1567144852
+      Scavenger Axe Slash_25: -615810027
+      Scavenger Axe Slash_26: 447964569
+      Scavenger Axe Slash_27: -1691723544
+      Scavenger Axe Slash_28: -1073343190
+      Scavenger Axe Slash_29: 1879873807
+      Scavenger Axe Slash_3: -333927839
+      Scavenger Axe Slash_30: 360593246
+      Scavenger Axe Slash_31: -2048589377
+      Scavenger Axe Slash_32: -544883987
+      Scavenger Axe Slash_33: -1448267376
+      Scavenger Axe Slash_34: -555748490
+      Scavenger Axe Slash_35: 1624716875
+      Scavenger Axe Slash_36: 192552630
+      Scavenger Axe Slash_37: -1309885017
+      Scavenger Axe Slash_38: 871543854
+      Scavenger Axe Slash_39: -1651391873
+      Scavenger Axe Slash_4: -936739106
+      Scavenger Axe Slash_5: 496297463
+      Scavenger Axe Slash_6: -1130638592
+      Scavenger Axe Slash_7: 437390415
+      Scavenger Axe Slash_8: 2095476500
+      Scavenger Axe Slash_9: -925260575
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

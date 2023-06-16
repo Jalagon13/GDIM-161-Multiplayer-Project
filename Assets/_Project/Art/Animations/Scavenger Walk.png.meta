@@ -1,0 +1,2499 @@
+fileFormatVersion: 2
+guid: 3c79d39f1a3586345adc2d9939be8fa3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Scavenger Walk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5640
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e754a230cc2a9f419e5a06d3750dd23
+      internalID: -1221700830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_1
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 5640
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5759a6b5e463d764ea448aae3f624029
+      internalID: -230794486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 5640
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96451214fa230f84cb81ed9ca08423c2
+      internalID: 1954179388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_3
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 5640
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: badd50c809084c343b64be5f985f4b7e
+      internalID: 1593593609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_4
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 5640
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6436de8b68769f4f87bddfe1bae6ab0
+      internalID: -1392426304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_5
+      rect:
+        serializedVersion: 2
+        x: 3665
+        y: 5640
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef51bd3141d1a1e4a982632c2ca46d34
+      internalID: 920731218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_6
+      rect:
+        serializedVersion: 2
+        x: 4398
+        y: 5640
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ae608072b6a0a4980ef4b56880729e
+      internalID: 946547480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_7
+      rect:
+        serializedVersion: 2
+        x: 5131
+        y: 5640
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1566970822d1df4288e873a477e5f7f
+      internalID: 2080214317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_8
+      rect:
+        serializedVersion: 2
+        x: 5864
+        y: 5640
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffcc80f1c3bbe8d40a07328e8f23f777
+      internalID: -167663937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_9
+      rect:
+        serializedVersion: 2
+        x: 6597
+        y: 5640
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640a91e1dffb4764caf54d93b83d4f08
+      internalID: -913379148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_10
+      rect:
+        serializedVersion: 2
+        x: 7330
+        y: 5640
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d334ee0c988a5c49b335a71409ce390
+      internalID: 1067694920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_11
+      rect:
+        serializedVersion: 2
+        x: 8063
+        y: 5640
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b1019988b13e343ba19eafe7da7d96
+      internalID: 2019356081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4935
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e43afea2fcc0441ad07bf5840e769e
+      internalID: -1384164378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_13
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 4935
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3904c80452dda49bb88cba094aa3da
+      internalID: -1966426719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_14
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 4935
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddefc4bfcc89e9844ae50a21ffce699b
+      internalID: 900389294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_15
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 4935
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3dac6a0dec0f440b7c67fe849c1e7f
+      internalID: -1588162732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_16
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 4935
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05aefa86bca3c6e49aea92c9d0f40bbd
+      internalID: 370886579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_17
+      rect:
+        serializedVersion: 2
+        x: 3665
+        y: 4935
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaeacce84f64dcc4a9e42027658bb30d
+      internalID: -1905890910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_18
+      rect:
+        serializedVersion: 2
+        x: 4398
+        y: 4935
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fe402d4ea72a8489a9c9195df361ec
+      internalID: 993567987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_19
+      rect:
+        serializedVersion: 2
+        x: 5131
+        y: 4935
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9fc8ba303d6784d80ccde777bcced1
+      internalID: 70823158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_20
+      rect:
+        serializedVersion: 2
+        x: 5864
+        y: 4935
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d08a13d1b196a45aa066b40abcf321
+      internalID: 1314388211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_21
+      rect:
+        serializedVersion: 2
+        x: 6597
+        y: 4935
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea6040c343f41c43988a30bf75838c9
+      internalID: 1356452336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_22
+      rect:
+        serializedVersion: 2
+        x: 7330
+        y: 4935
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3834d3986e88c47b658e3a1454de66
+      internalID: -1510020603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_23
+      rect:
+        serializedVersion: 2
+        x: 8063
+        y: 4935
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb06cc39e544b545a10b5ad21e90c4a
+      internalID: -2110842452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4230
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b03d65852ac4fd499bcf767d7851a69
+      internalID: 939886933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_25
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 4230
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f0c9958a9294549969b4962c1c0d42
+      internalID: -133033167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_26
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 4230
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f915ec8753cdd36418f48d39088d0b28
+      internalID: 901028131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_27
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 4230
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e1a6f307b10cc4db4891ee46c3eed3
+      internalID: -634470375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_28
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 4230
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a37c39a4acb2ad429b5c5c06cb3ee5c
+      internalID: 455724610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_29
+      rect:
+        serializedVersion: 2
+        x: 3665
+        y: 4230
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3deb12d5f82e7ec49a49f3bb66155596
+      internalID: 1822329051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_30
+      rect:
+        serializedVersion: 2
+        x: 4398
+        y: 4230
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98afbe95b4a6f9d4ea15343d8e3dd285
+      internalID: -1241241600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_31
+      rect:
+        serializedVersion: 2
+        x: 5131
+        y: 4230
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d18b4f339bcfe74bbeb4545742cb81b
+      internalID: 555980772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_32
+      rect:
+        serializedVersion: 2
+        x: 5864
+        y: 4230
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a59e655a2b04af4eb469a2fc1c1a57f
+      internalID: 1952045584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_33
+      rect:
+        serializedVersion: 2
+        x: 6597
+        y: 4230
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45de2c45f4c610744a872a4fe70d840b
+      internalID: -1547895471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_34
+      rect:
+        serializedVersion: 2
+        x: 7330
+        y: 4230
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21a10479cf41ab458ce423ddeb7dbbb
+      internalID: 1115303446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_35
+      rect:
+        serializedVersion: 2
+        x: 8063
+        y: 4230
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba95185cff622147b8b83c0b8e84a74
+      internalID: -1441106114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3525
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7f08de36fce8442bd009a2aadd713d
+      internalID: 1230665841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_37
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 3525
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd4ab0948bccc9489057d80db6cc967
+      internalID: 1646628614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_38
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 3525
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d1f9c2bf2ab7949bc7f89bbe5fbaa1
+      internalID: 1026285157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_39
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 3525
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe502df649645c48ade7ffc458b9059
+      internalID: 1684281259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_40
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 3525
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4124f4414ef11e7438b2223c70d9ea04
+      internalID: -135067904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_41
+      rect:
+        serializedVersion: 2
+        x: 3665
+        y: 3525
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef418326c73db4449c1a19a5b9bfb59
+      internalID: 1492455041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_42
+      rect:
+        serializedVersion: 2
+        x: 4398
+        y: 3525
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c736e52b36d9374abd0315098c38055
+      internalID: -211188126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_43
+      rect:
+        serializedVersion: 2
+        x: 5131
+        y: 3525
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e954174bb09f7464aa150ea0e9224981
+      internalID: 403192761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_44
+      rect:
+        serializedVersion: 2
+        x: 5864
+        y: 3525
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad9d39fda8495045ac06df2248f3ed7
+      internalID: 1441842417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_45
+      rect:
+        serializedVersion: 2
+        x: 6597
+        y: 3525
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c257453c54434bf4aa6f5e78076fe341
+      internalID: -1575302349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_46
+      rect:
+        serializedVersion: 2
+        x: 7330
+        y: 3525
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff91d020e3d192c4c8b738066c6c1d62
+      internalID: -245627673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_47
+      rect:
+        serializedVersion: 2
+        x: 8063
+        y: 3525
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e497979c15d0864c96c9a3d18e6128c
+      internalID: 1653184907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2820
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae3ce985eb353d4c9a1eaf70cc699e1
+      internalID: -2042362981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_49
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 2820
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0aab62c6b6d55c4bb10ef06e2d5fb19
+      internalID: -1007947971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_50
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 2820
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156fd1c937bee5e4a9ec27f58e750fe6
+      internalID: 1528744948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_51
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 2820
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8d8680721599546abb1359b1acc5a2
+      internalID: -2059393742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_52
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 2820
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0141cd559e2ba4143b41b1fc27227de2
+      internalID: -1106501716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_53
+      rect:
+        serializedVersion: 2
+        x: 3665
+        y: 2820
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a15ada7210005d4c8093b11280603a5
+      internalID: -677891223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_54
+      rect:
+        serializedVersion: 2
+        x: 4398
+        y: 2820
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0947bf0f09c174c81c8a8679752057
+      internalID: 1288154078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_55
+      rect:
+        serializedVersion: 2
+        x: 5131
+        y: 2820
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ad168b9a478c84c9188364a7fa0e53
+      internalID: 236187742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_56
+      rect:
+        serializedVersion: 2
+        x: 5864
+        y: 2820
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b16f9b6c1c13eb4abf5c4197294a1c3
+      internalID: 57543092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_57
+      rect:
+        serializedVersion: 2
+        x: 6597
+        y: 2820
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ac9abd551d7154aae2d1504ae62da6
+      internalID: -401313036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_58
+      rect:
+        serializedVersion: 2
+        x: 7330
+        y: 2820
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb169c4b10963b4d935907a28673ffb
+      internalID: -116005927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_59
+      rect:
+        serializedVersion: 2
+        x: 8063
+        y: 2820
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e603b75d0e050a345bb51f8ad50a8dad
+      internalID: -703456494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2115
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6705f54137890504c9288bb3cbeae07d
+      internalID: 799056525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_61
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 2115
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400b098108a35214faa41c650ad55100
+      internalID: 114909487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_62
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 2115
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f29bd0eaf599f43916b025feb97619
+      internalID: 829488879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_63
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 2115
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed23071bbc66594c989a91b1e44df98
+      internalID: 353489072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_64
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 2115
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bcf3010ab4606a4aa877296ff60259e
+      internalID: 116043191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_65
+      rect:
+        serializedVersion: 2
+        x: 3665
+        y: 2115
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466eea46765f79e4dbea1c3e67ae3d2c
+      internalID: -35762028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_66
+      rect:
+        serializedVersion: 2
+        x: 4398
+        y: 2115
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab91d0b07e2e9d4dbc9243a1f1c219b
+      internalID: 903530242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_67
+      rect:
+        serializedVersion: 2
+        x: 5131
+        y: 2115
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a1496373a92df419953f85a98931a3
+      internalID: 341602200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_68
+      rect:
+        serializedVersion: 2
+        x: 5864
+        y: 2115
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de61290becacc849acaab4127783e32
+      internalID: 1532298598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_69
+      rect:
+        serializedVersion: 2
+        x: 6597
+        y: 2115
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f58365e5a96ad40b337ca3729e822f
+      internalID: 59712355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_70
+      rect:
+        serializedVersion: 2
+        x: 7330
+        y: 2115
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b3c387e9257354dbdf2297f5952bca
+      internalID: 1603387202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_71
+      rect:
+        serializedVersion: 2
+        x: 8063
+        y: 2115
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c0ff75665ae9645bd43febb32e3f50
+      internalID: -856361510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1410
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04411ce49dc7960438dc5b591b213473
+      internalID: 1233900223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_73
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 1410
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8232f2235e0cedb42a8b0ab95f243827
+      internalID: 1890723930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_74
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 1410
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7007ac29787684e9422c1da8c67b73
+      internalID: 1342136755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_75
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 1410
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06e25d63bfd6e249a3fe93181b5014d
+      internalID: 950182362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_76
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 1410
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d7c61f972616c49a135b808183b6ed
+      internalID: -1743911660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_77
+      rect:
+        serializedVersion: 2
+        x: 3665
+        y: 1410
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ad2be806d8c31468b5f5421d42d9a4
+      internalID: 1734770232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_78
+      rect:
+        serializedVersion: 2
+        x: 4398
+        y: 1410
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47695c9103091ec4d906254bee25a697
+      internalID: -2000999957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_79
+      rect:
+        serializedVersion: 2
+        x: 5131
+        y: 1410
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485d4e09596803a41bcaa59b9361c1fe
+      internalID: -1391853099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_80
+      rect:
+        serializedVersion: 2
+        x: 5864
+        y: 1410
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90440844c0d43e5409705fbfb1df576c
+      internalID: -899260246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_81
+      rect:
+        serializedVersion: 2
+        x: 6597
+        y: 1410
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f430ced0b811044b39494c8df2b64b
+      internalID: 23039216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_82
+      rect:
+        serializedVersion: 2
+        x: 7330
+        y: 1410
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4319476538ed3a04bbb3326f4b25c2d8
+      internalID: -220241036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_83
+      rect:
+        serializedVersion: 2
+        x: 8063
+        y: 1410
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91833b72f35d5f942a51bb4e74975e29
+      internalID: -1204622697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 705
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630c5d08bd2afca458802d19e1f77ecb
+      internalID: 1004334026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_85
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 705
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b772601b67dca3447988546ffdafdd3a
+      internalID: -1477750427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_86
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 705
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c5899cca09de648b6bc98511d21034
+      internalID: 135690414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_87
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 705
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e4dc7e9255ea9479fef5859e5f3541
+      internalID: 620108678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_88
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 705
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3090ea7873ac844eac4ec8d8b32746e
+      internalID: -1165496198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_89
+      rect:
+        serializedVersion: 2
+        x: 3665
+        y: 705
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030063a4ef9610f458fc23660b0fdf01
+      internalID: -1524965081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_90
+      rect:
+        serializedVersion: 2
+        x: 4398
+        y: 705
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddefcf3b657779645bee35dd6d9af27b
+      internalID: 1599646920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_91
+      rect:
+        serializedVersion: 2
+        x: 5131
+        y: 705
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de33f374b583684c97e0a762940b3d7
+      internalID: 89648064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_92
+      rect:
+        serializedVersion: 2
+        x: 5864
+        y: 705
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278baa2a4b368964e822a7fc2c43f313
+      internalID: 1422623498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_93
+      rect:
+        serializedVersion: 2
+        x: 6597
+        y: 705
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a12a5f2311265946bf9e97a110edfec
+      internalID: 1295287638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_94
+      rect:
+        serializedVersion: 2
+        x: 7330
+        y: 705
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625f7e7a334ff634cb7abc6f33c1c19a
+      internalID: -762830350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_95
+      rect:
+        serializedVersion: 2
+        x: 8063
+        y: 705
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697472e43beaed34ea10d1bab28be5b8
+      internalID: -444999024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad9d0f9140845640832e87eed5f7c6d
+      internalID: -1203626769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_97
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 0
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e3b418ca7247048bef9576aa48c82b
+      internalID: 1777566405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_98
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 0
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27d5d511634e934aa3d6723c8a5105a
+      internalID: 919432315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_99
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 0
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87123e4d9c9f10647ae2d504515e4177
+      internalID: 2083344743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_100
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 0
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f623114c5b064ea4ca7d25d719865d06
+      internalID: -1730854373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_101
+      rect:
+        serializedVersion: 2
+        x: 3665
+        y: 0
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d79659c565cf84cb5a6cdada235cee
+      internalID: -1420707120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_102
+      rect:
+        serializedVersion: 2
+        x: 4398
+        y: 0
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbdde93da790c1f41aa051e696488819
+      internalID: 1514370183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_103
+      rect:
+        serializedVersion: 2
+        x: 5131
+        y: 0
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf96e89fcab7f2048bdba1628cc13c49
+      internalID: 293396299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_104
+      rect:
+        serializedVersion: 2
+        x: 5864
+        y: 0
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd921eb50c24c744a5a9554d0703697
+      internalID: 424514744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_105
+      rect:
+        serializedVersion: 2
+        x: 6597
+        y: 0
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 793d0a6639ea84d4e961738396332bb6
+      internalID: 1157726823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_106
+      rect:
+        serializedVersion: 2
+        x: 7330
+        y: 0
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ba9f4b80e4f8a4c86bda6c7b6acb03
+      internalID: 63999665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scavenger Walk_107
+      rect:
+        serializedVersion: 2
+        x: 8063
+        y: 0
+        width: 733
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394b142bab1a9e240b565f5923f7c34c
+      internalID: 322154423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Scavenger Walk_0: -1221700830
+      Scavenger Walk_1: -230794486
+      Scavenger Walk_10: 1067694920
+      Scavenger Walk_100: -1730854373
+      Scavenger Walk_101: -1420707120
+      Scavenger Walk_102: 1514370183
+      Scavenger Walk_103: 293396299
+      Scavenger Walk_104: 424514744
+      Scavenger Walk_105: 1157726823
+      Scavenger Walk_106: 63999665
+      Scavenger Walk_107: 322154423
+      Scavenger Walk_11: 2019356081
+      Scavenger Walk_12: -1384164378
+      Scavenger Walk_13: -1966426719
+      Scavenger Walk_14: 900389294
+      Scavenger Walk_15: -1588162732
+      Scavenger Walk_16: 370886579
+      Scavenger Walk_17: -1905890910
+      Scavenger Walk_18: 993567987
+      Scavenger Walk_19: 70823158
+      Scavenger Walk_2: 1954179388
+      Scavenger Walk_20: 1314388211
+      Scavenger Walk_21: 1356452336
+      Scavenger Walk_22: -1510020603
+      Scavenger Walk_23: -2110842452
+      Scavenger Walk_24: 939886933
+      Scavenger Walk_25: -133033167
+      Scavenger Walk_26: 901028131
+      Scavenger Walk_27: -634470375
+      Scavenger Walk_28: 455724610
+      Scavenger Walk_29: 1822329051
+      Scavenger Walk_3: 1593593609
+      Scavenger Walk_30: -1241241600
+      Scavenger Walk_31: 555980772
+      Scavenger Walk_32: 1952045584
+      Scavenger Walk_33: -1547895471
+      Scavenger Walk_34: 1115303446
+      Scavenger Walk_35: -1441106114
+      Scavenger Walk_36: 1230665841
+      Scavenger Walk_37: 1646628614
+      Scavenger Walk_38: 1026285157
+      Scavenger Walk_39: 1684281259
+      Scavenger Walk_4: -1392426304
+      Scavenger Walk_40: -135067904
+      Scavenger Walk_41: 1492455041
+      Scavenger Walk_42: -211188126
+      Scavenger Walk_43: 403192761
+      Scavenger Walk_44: 1441842417
+      Scavenger Walk_45: -1575302349
+      Scavenger Walk_46: -245627673
+      Scavenger Walk_47: 1653184907
+      Scavenger Walk_48: -2042362981
+      Scavenger Walk_49: -1007947971
+      Scavenger Walk_5: 920731218
+      Scavenger Walk_50: 1528744948
+      Scavenger Walk_51: -2059393742
+      Scavenger Walk_52: -1106501716
+      Scavenger Walk_53: -677891223
+      Scavenger Walk_54: 1288154078
+      Scavenger Walk_55: 236187742
+      Scavenger Walk_56: 57543092
+      Scavenger Walk_57: -401313036
+      Scavenger Walk_58: -116005927
+      Scavenger Walk_59: -703456494
+      Scavenger Walk_6: 946547480
+      Scavenger Walk_60: 799056525
+      Scavenger Walk_61: 114909487
+      Scavenger Walk_62: 829488879
+      Scavenger Walk_63: 353489072
+      Scavenger Walk_64: 116043191
+      Scavenger Walk_65: -35762028
+      Scavenger Walk_66: 903530242
+      Scavenger Walk_67: 341602200
+      Scavenger Walk_68: 1532298598
+      Scavenger Walk_69: 59712355
+      Scavenger Walk_7: 2080214317
+      Scavenger Walk_70: 1603387202
+      Scavenger Walk_71: -856361510
+      Scavenger Walk_72: 1233900223
+      Scavenger Walk_73: 1890723930
+      Scavenger Walk_74: 1342136755
+      Scavenger Walk_75: 950182362
+      Scavenger Walk_76: -1743911660
+      Scavenger Walk_77: 1734770232
+      Scavenger Walk_78: -2000999957
+      Scavenger Walk_79: -1391853099
+      Scavenger Walk_8: -167663937
+      Scavenger Walk_80: -899260246
+      Scavenger Walk_81: 23039216
+      Scavenger Walk_82: -220241036
+      Scavenger Walk_83: -1204622697
+      Scavenger Walk_84: 1004334026
+      Scavenger Walk_85: -1477750427
+      Scavenger Walk_86: 135690414
+      Scavenger Walk_87: 620108678
+      Scavenger Walk_88: -1165496198
+      Scavenger Walk_89: -1524965081
+      Scavenger Walk_9: -913379148
+      Scavenger Walk_90: 1599646920
+      Scavenger Walk_91: 89648064
+      Scavenger Walk_92: 1422623498
+      Scavenger Walk_93: 1295287638
+      Scavenger Walk_94: -762830350
+      Scavenger Walk_95: -444999024
+      Scavenger Walk_96: -1203626769
+      Scavenger Walk_97: 1777566405
+      Scavenger Walk_98: 919432315
+      Scavenger Walk_99: 2083344743
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

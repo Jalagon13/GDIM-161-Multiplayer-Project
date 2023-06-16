@@ -7,6 +7,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1039444821327249283, guid: fd5f7bd1a14d5b847a8ebbe120f646c3, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1039444821327249283, guid: fd5f7bd1a14d5b847a8ebbe120f646c3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 1039444821327249283, guid: fd5f7bd1a14d5b847a8ebbe120f646c3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 1039444821327249283, guid: fd5f7bd1a14d5b847a8ebbe120f646c3, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1688966324026841271, guid: fd5f7bd1a14d5b847a8ebbe120f646c3, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -45,15 +61,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7095149777837683669, guid: fd5f7bd1a14d5b847a8ebbe120f646c3, type: 3}
       propertyPath: m_Color.b
-      value: 0.29732996
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7095149777837683669, guid: fd5f7bd1a14d5b847a8ebbe120f646c3, type: 3}
       propertyPath: m_Color.g
-      value: 0.29732996
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7095149777837683669, guid: fd5f7bd1a14d5b847a8ebbe120f646c3, type: 3}
       propertyPath: m_Color.r
-      value: 0.8207547
+      value: 0.27450982
       objectReference: {fileID: 0}
     - target: {fileID: 7095149778857525148, guid: fd5f7bd1a14d5b847a8ebbe120f646c3, type: 3}
       propertyPath: test
@@ -65,7 +81,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: ae0806e7c38b2ae4cb469613c060c154, type: 2}
     - target: {fileID: 7095149778857525216, guid: fd5f7bd1a14d5b847a8ebbe120f646c3, type: 3}
       propertyPath: m_Name
-      value: '[R-Unit] Scavenger'
+      value: '[R-Unit] Scavenger-M'
       objectReference: {fileID: 0}
     - target: {fileID: 7095149778857525216, guid: fd5f7bd1a14d5b847a8ebbe120f646c3, type: 3}
       propertyPath: m_TagString

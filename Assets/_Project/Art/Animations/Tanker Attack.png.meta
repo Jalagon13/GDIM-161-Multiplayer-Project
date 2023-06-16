@@ -1,0 +1,1487 @@
+fileFormatVersion: 2
+guid: c5dc3058736612342b10e231a13a6422
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tanker Attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4529
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef734d20b4ea986469212461a9b37af1
+      internalID: 704097865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_1
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 4529
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6013009f46284a43a7c816ab91df2b8
+      internalID: -1758925240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_2
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 4529
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ef0b1d2ad2a2c46a290e29a105e9b8
+      internalID: 1440041449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_3
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 4529
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af34f96565ff004e867f327a6de76b0
+      internalID: 999603559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_4
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 4529
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d619e87790400c4e8d92a97364c326a
+      internalID: 684781795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_5
+      rect:
+        serializedVersion: 2
+        x: 4850
+        y: 4529
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1431d9edee95ded42bc2d72f644f2a7f
+      internalID: -304368713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_6
+      rect:
+        serializedVersion: 2
+        x: 5820
+        y: 4529
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f0684210674d749ba298543d417411
+      internalID: -1735642019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_7
+      rect:
+        serializedVersion: 2
+        x: 6790
+        y: 4529
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf5162b41555fd479b9b7255b0ea28a
+      internalID: -1246610449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3882
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bdfd1e0f100e854191a7bcd28f61b35
+      internalID: -2110241965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_9
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 3882
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54068d52ce96e44090fde8b209fee86
+      internalID: -1920233908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_10
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 3882
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212692bb7da94e54bae28f7ae587ccd6
+      internalID: -490018604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_11
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 3882
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c09b5bf5894dc4f8c5f147edfaecc4
+      internalID: -286251904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_12
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 3882
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f35824f346c5514d95ef1076959ebde
+      internalID: -238919383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_13
+      rect:
+        serializedVersion: 2
+        x: 4850
+        y: 3882
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2306aef1b412f4f9b48ddb60162894
+      internalID: 802495546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_14
+      rect:
+        serializedVersion: 2
+        x: 5820
+        y: 3882
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031c57dec9a21aa41b68bb898586dd92
+      internalID: -2014765263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_15
+      rect:
+        serializedVersion: 2
+        x: 6790
+        y: 3882
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9e6e2aabcad62418aed69c96930fa9
+      internalID: -1167586404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3235
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a9fdf0f85b1dd4689c5ca035a89291
+      internalID: 1446556013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_17
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 3235
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8287b6d11208a4bb3906ec4214fe48
+      internalID: -1409062313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_18
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 3235
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bcbd0f3dc1639548a2ce9255aa0ef63
+      internalID: -1170491816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_19
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 3235
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33108c9af272a764bbf952c3b248f48e
+      internalID: -1181048916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_20
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 3235
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d682986f448278c488d33c6686db6135
+      internalID: -1343892347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_21
+      rect:
+        serializedVersion: 2
+        x: 4850
+        y: 3235
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28425187745e91d44b349850d5a67d98
+      internalID: 600356724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_22
+      rect:
+        serializedVersion: 2
+        x: 5820
+        y: 3235
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a84913a03d17aa7469e3361970456a0e
+      internalID: 1455133832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_23
+      rect:
+        serializedVersion: 2
+        x: 6790
+        y: 3235
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e773acee202676a47b63502fc941944b
+      internalID: -705479333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2588
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30ef8eda92f1ee43b3e152e60457a50
+      internalID: -1733771288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_25
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 2588
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829a7a0d3e28b0d45bdcbd2f7530d672
+      internalID: -1044658875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_26
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 2588
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c4d16c225076646a6977fe53b5be39
+      internalID: -315427197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_27
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 2588
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24d39076075e2f498edc7bd4536e18b
+      internalID: 27068433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_28
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 2588
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35a2bf9e77d49e4d9e558500805ed01
+      internalID: 921339021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_29
+      rect:
+        serializedVersion: 2
+        x: 4850
+        y: 2588
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de481a98e1dab8b47bdff8a9850281d9
+      internalID: -1662416204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_30
+      rect:
+        serializedVersion: 2
+        x: 5820
+        y: 2588
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c322beb1a7cc3eb48b94d1a068484d07
+      internalID: 555834376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_31
+      rect:
+        serializedVersion: 2
+        x: 6790
+        y: 2588
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58699d06b37e00c40875a9dd7e424251
+      internalID: 1789581293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1941
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc58c80f781326743938a66c1a08efc1
+      internalID: 2052122078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_33
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 1941
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d98f13237123e44b6463bd0ffcce3a
+      internalID: -626225605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_34
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 1941
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ed3161859d4f34db5c17cdd3843e4d
+      internalID: 1627068772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_35
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 1941
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa60571c638b9146b2f225b81c6cbc6
+      internalID: -256389127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_36
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 1941
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4853ae56734bc464c951e3f63ec130db
+      internalID: 860270108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_37
+      rect:
+        serializedVersion: 2
+        x: 4850
+        y: 1941
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a97183dea98be4e88c0b1d4f0dee31
+      internalID: 1046465592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_38
+      rect:
+        serializedVersion: 2
+        x: 5820
+        y: 1941
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2179a8bb8e1c4448557b70b11539f5
+      internalID: 2078242876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_39
+      rect:
+        serializedVersion: 2
+        x: 6790
+        y: 1941
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ba1cbc753741540a84798cbc608420
+      internalID: -1665893349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1294
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ac5dca0c4bfbd4a8e87548b2f5fdf6
+      internalID: -1692915422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_41
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 1294
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73259978c03a40a42ba3f52e43d5917b
+      internalID: -643663071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_42
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 1294
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a97f610dd2aa4408c5dfe79a6251bc
+      internalID: 648096649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_43
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 1294
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63df29153667c744ca9ab1b2838f19b4
+      internalID: -570124887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_44
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 1294
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd93eb666fc3bf0479bb22229f7b76fb
+      internalID: 1943099555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_45
+      rect:
+        serializedVersion: 2
+        x: 4850
+        y: 1294
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14926c1c2bd1b7840b83270a8735a6fd
+      internalID: -405465953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_46
+      rect:
+        serializedVersion: 2
+        x: 5820
+        y: 1294
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6262b933114d34cb8c3b5b140981c5
+      internalID: -1917560443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_47
+      rect:
+        serializedVersion: 2
+        x: 6790
+        y: 1294
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689286a5c5e7323408a033b559d5ddcb
+      internalID: -1668428425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 647
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3e8ac9af6a114419c3451b9c8705d0
+      internalID: 1400051242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_49
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 647
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed93e5e0e2987a1499e59cc231ca4886
+      internalID: -745566450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_50
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 647
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a517de6dad454d4c9a5353684310ea4
+      internalID: 1232233489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_51
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 647
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3dd88a2b981e2f4d8f4d8ffd0778334
+      internalID: 524157045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_52
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 647
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e487a20895fd8e4f9631d0ef77a1f25
+      internalID: -867002692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_53
+      rect:
+        serializedVersion: 2
+        x: 4850
+        y: 647
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f461950894466c14cab48643a094c8db
+      internalID: -805360100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_54
+      rect:
+        serializedVersion: 2
+        x: 5820
+        y: 647
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab18d052ea71ca4bbcb0f1f3462da68
+      internalID: -1362003863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_55
+      rect:
+        serializedVersion: 2
+        x: 6790
+        y: 647
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d885cc948801d4d92dda1f89b25157
+      internalID: -1683003161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c235e94236402ce429e6458066874130
+      internalID: -68023509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_57
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 0
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc25935a11b804246b37a0fb31aebe0b
+      internalID: 809065152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_58
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 0
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713d8a396ffd2fa478501997cef24ece
+      internalID: -31210166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_59
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 0
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20e6a91e507a634d816e459abf8e432
+      internalID: 646495806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_60
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 0
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d9ab5eaa203e34b8cbab8427c0651d
+      internalID: 1541871883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Attack_61
+      rect:
+        serializedVersion: 2
+        x: 4850
+        y: 0
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275d129c058741540b8163f4b7dc8fed
+      internalID: 460778369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tanker Attack_0: 704097865
+      Tanker Attack_1: -1758925240
+      Tanker Attack_10: -490018604
+      Tanker Attack_11: -286251904
+      Tanker Attack_12: -238919383
+      Tanker Attack_13: 802495546
+      Tanker Attack_14: -2014765263
+      Tanker Attack_15: -1167586404
+      Tanker Attack_16: 1446556013
+      Tanker Attack_17: -1409062313
+      Tanker Attack_18: -1170491816
+      Tanker Attack_19: -1181048916
+      Tanker Attack_2: 1440041449
+      Tanker Attack_20: -1343892347
+      Tanker Attack_21: 600356724
+      Tanker Attack_22: 1455133832
+      Tanker Attack_23: -705479333
+      Tanker Attack_24: -1733771288
+      Tanker Attack_25: -1044658875
+      Tanker Attack_26: -315427197
+      Tanker Attack_27: 27068433
+      Tanker Attack_28: 921339021
+      Tanker Attack_29: -1662416204
+      Tanker Attack_3: 999603559
+      Tanker Attack_30: 555834376
+      Tanker Attack_31: 1789581293
+      Tanker Attack_32: 2052122078
+      Tanker Attack_33: -626225605
+      Tanker Attack_34: 1627068772
+      Tanker Attack_35: -256389127
+      Tanker Attack_36: 860270108
+      Tanker Attack_37: 1046465592
+      Tanker Attack_38: 2078242876
+      Tanker Attack_39: -1665893349
+      Tanker Attack_4: 684781795
+      Tanker Attack_40: -1692915422
+      Tanker Attack_41: -643663071
+      Tanker Attack_42: 648096649
+      Tanker Attack_43: -570124887
+      Tanker Attack_44: 1943099555
+      Tanker Attack_45: -405465953
+      Tanker Attack_46: -1917560443
+      Tanker Attack_47: -1668428425
+      Tanker Attack_48: 1400051242
+      Tanker Attack_49: -745566450
+      Tanker Attack_5: -304368713
+      Tanker Attack_50: 1232233489
+      Tanker Attack_51: 524157045
+      Tanker Attack_52: -867002692
+      Tanker Attack_53: -805360100
+      Tanker Attack_54: -1362003863
+      Tanker Attack_55: -1683003161
+      Tanker Attack_56: -68023509
+      Tanker Attack_57: 809065152
+      Tanker Attack_58: -31210166
+      Tanker Attack_59: 646495806
+      Tanker Attack_6: -1735642019
+      Tanker Attack_60: 1541871883
+      Tanker Attack_61: 460778369
+      Tanker Attack_7: -1246610449
+      Tanker Attack_8: -2110241965
+      Tanker Attack_9: -1920233908
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,937 @@
+fileFormatVersion: 2
+guid: c4a70d77305488741b754dd7230e87a7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Carnagore Attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3354
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d59bc3cc4d9a546b4c85868b9da6d1
+      internalID: -773566236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_1
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 3354
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691b6da051823bd4fad03505158f7109
+      internalID: 294871793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_2
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 3354
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0fa4aca75a2a4418894a7bca7990ba
+      internalID: -1333972535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_3
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 3354
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5b4527cac6bf741a94dd6aaafa6385
+      internalID: -966888123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_4
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 3354
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cf13f8409792941940e84678b25eee
+      internalID: -2118833816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_5
+      rect:
+        serializedVersion: 2
+        x: 3765
+        y: 3354
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d3710c16c93674f92b1258daa12de0
+      internalID: -1063032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2795
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21abc7b0cd9a9c4795af4c2b8c13d3f
+      internalID: 560748926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_7
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 2795
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f50a62191d57ca4da2eda0ee1dd94ca
+      internalID: 1577323326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_8
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 2795
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a211a0a10ad084eb41a8366ea97652
+      internalID: 1718145306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_9
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 2795
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed450695e2f8584a820e49fa165ddc9
+      internalID: -1964207832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_10
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 2795
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9ae31bc6f1c6f4982dcb922274ce58
+      internalID: -159798521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_11
+      rect:
+        serializedVersion: 2
+        x: 3765
+        y: 2795
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4c688af78d1644ba59aaea32bef937
+      internalID: -1324440191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2236
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d135dc747e1c434e9f554520bef071f
+      internalID: 1039639590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_13
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 2236
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d716d244150091045b428a56d517f854
+      internalID: -1768202908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_14
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 2236
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64856a8482c0e14fa162ade407fed3d
+      internalID: -2042737600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_15
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 2236
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c2d3562a1aa8a46abb0092aac90350
+      internalID: 333414350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_16
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 2236
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67591bf897245dc4a8c373f284535546
+      internalID: 1699917653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_17
+      rect:
+        serializedVersion: 2
+        x: 3765
+        y: 2236
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701619f51779b294d812d6ec424e47dd
+      internalID: 103101127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1677
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec88f74e8210b644b42bd5fca9fd6e4
+      internalID: 302052777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_19
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 1677
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78afc248461be22448b8ed2c0a5996ca
+      internalID: -2084069141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_20
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 1677
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e615ebed1d894a4d8053b23e241da81
+      internalID: -1882331286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_21
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 1677
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65c8b51ded43a744818164ccb9881d2
+      internalID: -154407485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_22
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 1677
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28bad4e0df537504eb7ffdfa41dfa7f9
+      internalID: -931264555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_23
+      rect:
+        serializedVersion: 2
+        x: 3765
+        y: 1677
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d39deb828e7b5b48b2d40e5ae7e38c1
+      internalID: -253151974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1118
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137296a987d4a2c4c9c8e7ca46c759bd
+      internalID: -1840312355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_25
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 1118
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67104a0e5f5e2aa4185467ef623682f8
+      internalID: -1510363888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_26
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 1118
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5503e3d317f092e4b904175f5e2c58d0
+      internalID: 1570969370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_27
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 1118
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd61f6966d77f624a9f39c71178e6f8d
+      internalID: -648884615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_28
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 1118
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05496d016cf95884b8e07c4a4890aa68
+      internalID: -1472193963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_29
+      rect:
+        serializedVersion: 2
+        x: 3765
+        y: 1118
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df4c2a366223a245959414aaec3bf11
+      internalID: -781294333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 559
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2947f5e6eaad3b42863c33e6f60c9e9
+      internalID: 1612846246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_31
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 559
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f5276f83a554d479da10a40e7a9574
+      internalID: 2032619721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_32
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 559
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ec1654deb01fd44866173e96679ec0
+      internalID: -13169846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_33
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 559
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f7470083bd8584fae35549a31f25ff
+      internalID: -688027549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_34
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 559
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c1579bf8e00084cb8cd73238543353
+      internalID: 1281480359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_35
+      rect:
+        serializedVersion: 2
+        x: 3765
+        y: 559
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c740428d444244cbb30e531e08479a
+      internalID: -1002316041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carnagore Attack_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 753
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25de6f3506d06774397cc03d25fa98ff
+      internalID: -1805693233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Carnagore Attack_0: -773566236
+      Carnagore Attack_1: 294871793
+      Carnagore Attack_10: -159798521
+      Carnagore Attack_11: -1324440191
+      Carnagore Attack_12: 1039639590
+      Carnagore Attack_13: -1768202908
+      Carnagore Attack_14: -2042737600
+      Carnagore Attack_15: 333414350
+      Carnagore Attack_16: 1699917653
+      Carnagore Attack_17: 103101127
+      Carnagore Attack_18: 302052777
+      Carnagore Attack_19: -2084069141
+      Carnagore Attack_2: -1333972535
+      Carnagore Attack_20: -1882331286
+      Carnagore Attack_21: -154407485
+      Carnagore Attack_22: -931264555
+      Carnagore Attack_23: -253151974
+      Carnagore Attack_24: -1840312355
+      Carnagore Attack_25: -1510363888
+      Carnagore Attack_26: 1570969370
+      Carnagore Attack_27: -648884615
+      Carnagore Attack_28: -1472193963
+      Carnagore Attack_29: -781294333
+      Carnagore Attack_3: -966888123
+      Carnagore Attack_30: 1612846246
+      Carnagore Attack_31: 2032619721
+      Carnagore Attack_32: -13169846
+      Carnagore Attack_33: -688027549
+      Carnagore Attack_34: 1281480359
+      Carnagore Attack_35: -1002316041
+      Carnagore Attack_36: -1805693233
+      Carnagore Attack_4: -2118833816
+      Carnagore Attack_5: -1063032
+      Carnagore Attack_6: 560748926
+      Carnagore Attack_7: 1577323326
+      Carnagore Attack_8: 1718145306
+      Carnagore Attack_9: -1964207832
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

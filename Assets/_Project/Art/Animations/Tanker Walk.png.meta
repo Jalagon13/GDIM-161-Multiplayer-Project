@@ -1,0 +1,1861 @@
+fileFormatVersion: 2
+guid: 291abaaadeb386d44819bf27e755e777
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tanker Walk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4529
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30fedb905da182c4abbbcfceadc1633c
+      internalID: -1900582038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_1
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 4529
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b1237e3ea3fa14f97050817ec492d1
+      internalID: 570467127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 4529
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea89def2e1ab0f54fa1ea3de8329911d
+      internalID: -1898550429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_3
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 4529
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f14a94a4c411f64295d1956f2618872
+      internalID: -777153199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_4
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 4529
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc01e2da34008f4489300587134b2b4
+      internalID: -1564782550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_5
+      rect:
+        serializedVersion: 2
+        x: 4850
+        y: 4529
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a600104efc9c62f4ebb0670eaa025aca
+      internalID: -499767903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_6
+      rect:
+        serializedVersion: 2
+        x: 5820
+        y: 4529
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b7091f645b0f445a1ff8b6a24e76a7
+      internalID: -1769077644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_7
+      rect:
+        serializedVersion: 2
+        x: 6790
+        y: 4529
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34b6cc17b224644b9ce921e82f9bb91
+      internalID: -2079180378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_8
+      rect:
+        serializedVersion: 2
+        x: 7760
+        y: 4529
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0b739f4bdbeed43856154a0c84e753
+      internalID: -551136981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_9
+      rect:
+        serializedVersion: 2
+        x: 8730
+        y: 4529
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eda6df78adcdf24ca23ff5269f6c98e
+      internalID: 1265595864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3882
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931108fbc6192d045aceb5586976f402
+      internalID: -913849722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_11
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 3882
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b3ddb6ca969b54eabbf3656f00ee50
+      internalID: -600898332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_12
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 3882
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a61a05a8d1de542853d3cbdcfc5ca8
+      internalID: 139734132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_13
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 3882
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8b14617b94a524fb3b52e75d4df3ef
+      internalID: -1266480311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_14
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 3882
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b603af56a3789e4388582bbb316c497
+      internalID: -1175587753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_15
+      rect:
+        serializedVersion: 2
+        x: 4850
+        y: 3882
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba46523569910246b14ff342a013606
+      internalID: 2136330862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_16
+      rect:
+        serializedVersion: 2
+        x: 5820
+        y: 3882
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c4e70d2dc9f8a41b74dd3e60bb7be2
+      internalID: -1979118597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_17
+      rect:
+        serializedVersion: 2
+        x: 6790
+        y: 3882
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d598a1d11b57e4ba2da779ca2a7f49
+      internalID: -874100074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_18
+      rect:
+        serializedVersion: 2
+        x: 7760
+        y: 3882
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c68b4067d761248be2992e4308516f
+      internalID: 144843555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_19
+      rect:
+        serializedVersion: 2
+        x: 8730
+        y: 3882
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6297f93c38f2ff84989f619a2f2d02eb
+      internalID: -1605520270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3235
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a672a1f6c16a89448873d96b8f2105d
+      internalID: -2090937821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_21
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 3235
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec453be3a6776a42bd15a7820804254
+      internalID: 1494053458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_22
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 3235
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a960c2a9bb8e3041bfbbc2aff8e8591
+      internalID: 86320679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_23
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 3235
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e01081ac6199241ac1f7bf576e8885
+      internalID: -1314413292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_24
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 3235
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97915d37708ed7a4097e6e6b5f64c0ee
+      internalID: -229892777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_25
+      rect:
+        serializedVersion: 2
+        x: 4850
+        y: 3235
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1d7159e595c7241845c0321227bfe0
+      internalID: 555498974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_26
+      rect:
+        serializedVersion: 2
+        x: 5820
+        y: 3235
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f6dbcabf2a51c42999dd1e647c5d0b
+      internalID: 335242045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_27
+      rect:
+        serializedVersion: 2
+        x: 6790
+        y: 3235
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ff79eba467fb941af697ca52a01d7f
+      internalID: 2061880201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_28
+      rect:
+        serializedVersion: 2
+        x: 7760
+        y: 3235
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f14aab88f67dd442a8ae57fe6fcb884
+      internalID: 979972370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_29
+      rect:
+        serializedVersion: 2
+        x: 8730
+        y: 3235
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 238dd3ea91ef4d8499f20341ddd0ebff
+      internalID: -1988452789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2588
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f78ec15bf506841b93fd5e183f8390
+      internalID: 568652703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_31
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 2588
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e59459ce95e61f46990ecb33990fe2e
+      internalID: -1976150364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_32
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 2588
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8dc63b5a993eb942ae43ba043f2c675
+      internalID: 937997445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_33
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 2588
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51026fdfe428b1645aedf1f0417dbaf8
+      internalID: -1585026838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_34
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 2588
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3501ee757d00e48858b162ed01666f
+      internalID: 1851076671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_35
+      rect:
+        serializedVersion: 2
+        x: 4850
+        y: 2588
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d67b8487cc3ff1240996f2f1cd0966f3
+      internalID: 927968129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_36
+      rect:
+        serializedVersion: 2
+        x: 5820
+        y: 2588
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ec5f9acf3d1c14abeb842b9efd53db
+      internalID: 732323002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_37
+      rect:
+        serializedVersion: 2
+        x: 6790
+        y: 2588
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5de075dffd6494482909e66290caec
+      internalID: 1130244385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_38
+      rect:
+        serializedVersion: 2
+        x: 7760
+        y: 2588
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef4f7bc5e1ca2a4d8c062e6890cbb51
+      internalID: 252815801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_39
+      rect:
+        serializedVersion: 2
+        x: 8730
+        y: 2588
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42fd05e6d81f92348b7b151530d5256b
+      internalID: -787491302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1941
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7859f73b266310b44b35b489a317a298
+      internalID: 828945959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_41
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 1941
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46efc74dde7ea542a7d9fe97c8fb80f
+      internalID: 1654728996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_42
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 1941
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73aa48eb318027449b40db38c703866d
+      internalID: -1299337679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_43
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 1941
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e70cb495c5a6dc4ea6a15ccdcfb4af5
+      internalID: 825151845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_44
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 1941
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d5d228b4601104997e7bef07224a5d
+      internalID: -826444613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_45
+      rect:
+        serializedVersion: 2
+        x: 4850
+        y: 1941
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63191ae6c77a8bd419413adbadfd4a27
+      internalID: -1924234091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_46
+      rect:
+        serializedVersion: 2
+        x: 5820
+        y: 1941
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd43be87595d3143821a0d81bf60cda
+      internalID: -1867969192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_47
+      rect:
+        serializedVersion: 2
+        x: 6790
+        y: 1941
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d65389fb0c3d95489fec0dabe189321
+      internalID: 970028136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_48
+      rect:
+        serializedVersion: 2
+        x: 7760
+        y: 1941
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fade2d60981c95b448b58422d4c23721
+      internalID: 1680895587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_49
+      rect:
+        serializedVersion: 2
+        x: 8730
+        y: 1941
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c9627bdb32bc64da6bf247c7b5399c
+      internalID: -527197022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1294
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd946620f03e96479cb1ba4ea9afa16
+      internalID: -1821005688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_51
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 1294
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8aedc3f1a9fa14ca2903a5ecef9f81
+      internalID: 1869935555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_52
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 1294
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6d7bffdb4186842a892d9822320da9
+      internalID: -25759227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_53
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 1294
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f849b4ac27909949808c96ffb8c99d8
+      internalID: 1064213394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_54
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 1294
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024ab0c81ff2d424595b377982a23e82
+      internalID: -815430592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_55
+      rect:
+        serializedVersion: 2
+        x: 4850
+        y: 1294
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754223a42c77f97479f6b9943d5a11e2
+      internalID: -1323164727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_56
+      rect:
+        serializedVersion: 2
+        x: 5820
+        y: 1294
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857c0085663accd4781da72620a508ac
+      internalID: -1625182577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_57
+      rect:
+        serializedVersion: 2
+        x: 6790
+        y: 1294
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11f8c9ee3c940e4588dd3bd95588fa2
+      internalID: -1900445051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_58
+      rect:
+        serializedVersion: 2
+        x: 7760
+        y: 1294
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37a3a330a3e5df42bf7f6d791719320
+      internalID: 1367671983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_59
+      rect:
+        serializedVersion: 2
+        x: 8730
+        y: 1294
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07aac7c30c276b04a895ade772d13649
+      internalID: 1035235797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 647
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e4260b69438204e8fb821d937d5367
+      internalID: 281240457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_61
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 647
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f07c149d00eca4499daab1bcc0ed5cb
+      internalID: -1001389807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_62
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 647
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3647c4403ff6c594b814618c96011482
+      internalID: 313182282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_63
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 647
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496d1d822809b3247bbcb35d3642554f
+      internalID: 2142942534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_64
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 647
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec994ee8b3c733942b31bd31cec1f848
+      internalID: 67281779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_65
+      rect:
+        serializedVersion: 2
+        x: 4850
+        y: 647
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b1a5acdbc5eb346b58878fbc729d4d
+      internalID: 785325484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_66
+      rect:
+        serializedVersion: 2
+        x: 5820
+        y: 647
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef181130b25659419c8169e06c3e5c7
+      internalID: -1439498182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_67
+      rect:
+        serializedVersion: 2
+        x: 6790
+        y: 647
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5716559e71b0bf84aa0ca0a540e130b2
+      internalID: -1810776656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_68
+      rect:
+        serializedVersion: 2
+        x: 7760
+        y: 647
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b76b24888a4a8488a5c616caa3e26b
+      internalID: -378916580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_69
+      rect:
+        serializedVersion: 2
+        x: 8730
+        y: 647
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81a3d77bf20fa64dbd172897f770942
+      internalID: -1265855402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3965eb57fe0996499a3a7b179d0cd94
+      internalID: -1216470242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_71
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 0
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7231107849d31479ed037416865f7e
+      internalID: 2011169118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_72
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 0
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6708f11d0bf4c4ab3e4b0d86eb3bb0
+      internalID: 127555565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_73
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 0
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c431d860e861c4e9add3dee337fcb2
+      internalID: -1577130694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_74
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 0
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8433898fa07303f4c8ee461ccc910a2e
+      internalID: 209428978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_75
+      rect:
+        serializedVersion: 2
+        x: 4850
+        y: 0
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5193bd6b2b23b6419899ee0fafd2381
+      internalID: 589558603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_76
+      rect:
+        serializedVersion: 2
+        x: 5820
+        y: 0
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd69c716548ba34ab3af0495ddfbd98
+      internalID: -2114843581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_77
+      rect:
+        serializedVersion: 2
+        x: 6790
+        y: 0
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b725c7e75f4dac64aa66ef5a1d290d55
+      internalID: -956740711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanker Walk_78
+      rect:
+        serializedVersion: 2
+        x: 7760
+        y: 0
+        width: 970
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d882a9fca0af14a88a4bdfebc34fd8
+      internalID: -223042339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tanker Walk_0: -1900582038
+      Tanker Walk_1: 570467127
+      Tanker Walk_10: -913849722
+      Tanker Walk_11: -600898332
+      Tanker Walk_12: 139734132
+      Tanker Walk_13: -1266480311
+      Tanker Walk_14: -1175587753
+      Tanker Walk_15: 2136330862
+      Tanker Walk_16: -1979118597
+      Tanker Walk_17: -874100074
+      Tanker Walk_18: 144843555
+      Tanker Walk_19: -1605520270
+      Tanker Walk_2: -1898550429
+      Tanker Walk_20: -2090937821
+      Tanker Walk_21: 1494053458
+      Tanker Walk_22: 86320679
+      Tanker Walk_23: -1314413292
+      Tanker Walk_24: -229892777
+      Tanker Walk_25: 555498974
+      Tanker Walk_26: 335242045
+      Tanker Walk_27: 2061880201
+      Tanker Walk_28: 979972370
+      Tanker Walk_29: -1988452789
+      Tanker Walk_3: -777153199
+      Tanker Walk_30: 568652703
+      Tanker Walk_31: -1976150364
+      Tanker Walk_32: 937997445
+      Tanker Walk_33: -1585026838
+      Tanker Walk_34: 1851076671
+      Tanker Walk_35: 927968129
+      Tanker Walk_36: 732323002
+      Tanker Walk_37: 1130244385
+      Tanker Walk_38: 252815801
+      Tanker Walk_39: -787491302
+      Tanker Walk_4: -1564782550
+      Tanker Walk_40: 828945959
+      Tanker Walk_41: 1654728996
+      Tanker Walk_42: -1299337679
+      Tanker Walk_43: 825151845
+      Tanker Walk_44: -826444613
+      Tanker Walk_45: -1924234091
+      Tanker Walk_46: -1867969192
+      Tanker Walk_47: 970028136
+      Tanker Walk_48: 1680895587
+      Tanker Walk_49: -527197022
+      Tanker Walk_5: -499767903
+      Tanker Walk_50: -1821005688
+      Tanker Walk_51: 1869935555
+      Tanker Walk_52: -25759227
+      Tanker Walk_53: 1064213394
+      Tanker Walk_54: -815430592
+      Tanker Walk_55: -1323164727
+      Tanker Walk_56: -1625182577
+      Tanker Walk_57: -1900445051
+      Tanker Walk_58: 1367671983
+      Tanker Walk_59: 1035235797
+      Tanker Walk_6: -1769077644
+      Tanker Walk_60: 281240457
+      Tanker Walk_61: -1001389807
+      Tanker Walk_62: 313182282
+      Tanker Walk_63: 2142942534
+      Tanker Walk_64: 67281779
+      Tanker Walk_65: 785325484
+      Tanker Walk_66: -1439498182
+      Tanker Walk_67: -1810776656
+      Tanker Walk_68: -378916580
+      Tanker Walk_69: -1265855402
+      Tanker Walk_7: -2079180378
+      Tanker Walk_70: -1216470242
+      Tanker Walk_71: 2011169118
+      Tanker Walk_72: 127555565
+      Tanker Walk_73: -1577130694
+      Tanker Walk_74: 209428978
+      Tanker Walk_75: 589558603
+      Tanker Walk_76: -2114843581
+      Tanker Walk_77: -956740711
+      Tanker Walk_78: -223042339
+      Tanker Walk_8: -551136981
+      Tanker Walk_9: 1265595864
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
