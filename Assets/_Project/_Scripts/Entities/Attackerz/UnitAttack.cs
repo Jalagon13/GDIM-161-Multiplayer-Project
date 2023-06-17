@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class UnitAttack : MonoBehaviour, IAttackMethod
 {
+    [SerializeField] private AudioClip _attackSound;
+
     private Unit _ctx;
 
     private void Awake()
@@ -27,6 +29,8 @@ public class UnitAttack : MonoBehaviour, IAttackMethod
 
     private IEnumerator AttackTarget()
     {
+        AudioManager.Instance.PlayClip(_attackSound, false, false);
+
         _ctx.UnitBeingAttacked.DealDamage(_ctx.AttackDamage);
 
         if (_ctx.UnitBeingAttacked.CurrentHP.Value > 0)

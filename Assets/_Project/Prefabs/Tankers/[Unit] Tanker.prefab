@@ -480,6 +480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _healthBar: {fileID: 8731873593901254595}
   _animator: {fileID: 6964537271674903472}
+  _sfx: {fileID: 0}
   _maxHP: 200
   _atkDamage: 50
   _atkSpeed: 5
@@ -503,6 +504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _blastRange: 1
+  _attackSound: {fileID: 8300000, guid: 1bf49dc97bb3c204eab2d588505ed6c3, type: 3}
 --- !u!1 &7648608958941497419
 GameObject:
   m_ObjectHideFlags: 0

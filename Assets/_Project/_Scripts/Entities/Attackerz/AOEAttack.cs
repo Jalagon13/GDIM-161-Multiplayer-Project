@@ -9,6 +9,7 @@ using UnityEngine;
 public class AOEAttack : MonoBehaviour, IAttackMethod
 {
     [SerializeField] private float _blastRange;
+    [SerializeField] private AudioClip _attackSound;
 
     private Unit _ctx;
     private int _blastDamage;
@@ -47,6 +48,7 @@ public class AOEAttack : MonoBehaviour, IAttackMethod
         }
 
         _ctx.UnitBeingAttacked.DealDamage(_ctx.AttackDamage);
+        AudioManager.Instance.PlayClip(_attackSound, false, false);
         Vector3 targetPos = _ctx.UnitBeingAttacked.transform.position;
 
         var colliders = Physics2D.OverlapCircleAll(targetPos, _blastRange);
