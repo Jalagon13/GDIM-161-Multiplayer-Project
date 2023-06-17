@@ -7,6 +7,7 @@ public abstract class Unit : NetworkBehaviour
     [Header("Unit base parameters")]
     [SerializeField] private HealthBar _healthBar;
     [SerializeField] private Animator _animator;
+    [SerializeField] private AudioSource _sfx;
     [SerializeField] protected int _maxHP;
     [SerializeField] protected int _atkDamage;
     [SerializeField] protected float _atkSpeed; // time it takes to perform an attack
@@ -51,6 +52,7 @@ public abstract class Unit : NetworkBehaviour
     {
         _currentHP.Value -= damage;
         _animator.SetTrigger("tookDamage");
+        _sfx.Play(); // Assumes that current sound is the attack
         UpdateHP();
     }
 
